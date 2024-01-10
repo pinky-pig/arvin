@@ -1,0 +1,164 @@
+html.dark{
+  --main-text-font-family       : X, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  --background                  : #090C10;
+  --bg-color                    : #231f20;
+  --text-color                  : #f0f2f8;
+  --bg-main-color               : transparent;
+  --bg-second-color             : #30363D;
+  --scrollbar-color             : #30363d;
+  --global-text-selection-bg    : #7C90DB;
+  --global-text-selection-text  : #000000;
+
+  --input-primary-color         : #0D1117;
+  --input-second-color          : #30363D;
+
+  --card--bg                    : #0D1117;
+  --card--border                : #30363D;
+  --card--placeholder-bg        : #30363De0;
+
+  --header-avatar-bg            : #6A89A790;
+  --header-avatar-shadow        : 0 0 transparent, 0 0 transparent, 0 -1px 0 #ffffff1a inset;
+  --header-avatar-shadow-1      : 0 0 0 11px #6A89A750, 0 0 0 24px #6A89A730;
+
+  --dockbar-bg                  : #262626;
+  --dockbar-placeholder-bg      : #404040;
+  --dockbar-text                : #FAFAFA;
+
+  --nav-bg                      : transparent;
+  --nav-text                    : #f0f2f8;
+  --nav-border                  : 2px solid #30363d;
+  --nav-placeholder-bg          : #30363d;
+
+  --blog-bg                     : #0D1117;
+  --blog--border                : #30363D;
+  --blog-text                   : #FAFAFA;
+
+  --blog-card-bg                 : #0D1117;
+  --blog-card-text               : #ffffff;
+  --blog-card-border             : #30363D;
+  --blog-btn                     : #aaaaaa;
+  --blog-btn-shadow              : #aaaaaa90;
+
+  --shadow-block-outer-bg               : #30363D;
+  --shadow-block-inner-bg               : #000000;
+  --shadow-block-content-bg             : #000000;
+  --shadow-block-content-text           : #D8DAE0;
+
+  --project-card-bg                      : #ffffff;
+  --project-card-text                    : #ffffff;
+
+  --modal-overlay-bg                     : #000000a3;
+  --modal-bg                             : #131417;
+  --modal-border                         : #30363C;
+
+  --ui-main-bg                           : #0D1117;
+  --ui-main-text                         : #ffffff;
+  --ui-main-border                       : #fffffffa;
+
+  --ui-button-shadow                     : inset 0 -3px 4px -1px rgba(255, 255, 255, .04),
+                                           0 2px 5px rgba(221, 150, 150, .04),
+                                           0 4px 4px rgba(255, 255, 255, .02),
+                                           0 0 0 1px rgba(255, 255, 255, .09);
+  --ui-button-hover-shadow               : inset 0 -3px 4px -1px rgba(200, 200, 200, .09),
+                                           0 2px 5px rgba(200, 200, 200, .13),
+                                           0 4px 4px rgba(200, 200, 200, .02),
+                                           0 0 0 1px rgba(200, 200, 200, .09);
+
+  --ui-main-box-shadow                   : inset 0 -3px 4px -1px rgba(255, 255, 255, .04),
+                                           0 2px 5px rgba(221, 150, 150, .04),
+                                           0 4px 4px rgba(255, 255, 255, .02),
+                                           0 0 0 1px rgba(255, 255, 255, .09);
+  --ui-main-hover-box-shadow             : inset 0 -3px 4px -1px rgba(200, 200, 200, .09),
+                                           0 2px 5px rgba(200, 200, 200, .13),
+                                           0 4px 4px rgba(200, 200, 200, .02),
+                                           0 0 0 1px rgba(200, 200, 200, .09);
+  --ui-second-bg                         : #0D1117;
+  --ui-second-box-shadow                 : none;
+}
+
+html{
+  --main-text-font-family       : X, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  --background                  : #ffffff;
+  --bg-color                    : #ffffff;
+  --text-color                  : #000000;
+  --bg-main-color               : #F3F3F3;
+  --bg-second-color             : #e3e3e3;
+  --scrollbar-color             : #9C9C9C;
+  --global-text-selection-bg    : #30363d;
+  --global-text-selection-text  : #ffffff;
+
+
+
+  --input-primary-color         : #ffffff;
+  --input-second-color          : #ffffff;
+
+  --card--bg                    : #F3F3F3;
+  --card--border                : #FFFFFF;
+  --card--placeholder-bg        : #e3e3e3e0;
+
+  --header-avatar-bg            : #ffffff90;
+  --header-avatar-shadow        : 0 2px 4px #00000005,0 1px 0 #0000000f;
+  --header-avatar-shadow-1      : 0 0 0 11px #f2f2f290, 0 0 0 24px #fafafa80;
+
+  --dockbar-bg                   : #ffffff;
+  --dockbar-placeholder-bg       : #ffffff;
+  --dockbar-text                 : #000000;
+
+  --nav-bg                       : #ffffff;
+  --nav-text                     : #ffffff;
+  --nav-border                   : 2px solid #F3F3F3;
+  /* --nav-border                   : 0px solid transparent; */
+  --nav-placeholder-bg           : #000000;
+
+  --blog-bg                      : #ffffff;
+  --blog--border                 : #ffffff;
+  --blog-text                    : #ffffff;
+
+  --blog-card-bg                 : #F3F3F3;
+  --blog-card-text               : #000000;
+  --blog-card-border             : #ffffff;
+  --blog-btn                     : #aaaaaa;
+  --blog-btn-shadow              : #aaaaaa90;
+
+  --shadow-block-outer-bg               : linear-gradient(145deg, #fefefe, #fff);
+  --shadow-block-inner-bg               : linear-gradient(to bottom, #EFEFEF, #ffffff);
+  --shadow-block-content-bg             : #C2C2C2;
+  --shadow-block-content-text           : #000000;
+
+  --project-card-bg                      : #ffffff;
+  --project-card-text                    : #ffffff;
+
+  --modal-overlay-bg                     : #e4e4e7db;
+  --modal-bg                             : #ffffff;
+  --modal-border                         : #f3f3f3;
+
+  --ui-main-bg                           : #ffffff;
+  --ui-main-text                         : #000000;
+  --ui-main-border                       : #0000000a;
+
+  --ui-button-shadow                     : inset 0 -3px 4px -1px rgba(0, 0, 0, .04),
+                                          0 2px 5px rgba(221, 150, 150, .04),
+                                          0 4px 4px rgba(0, 0, 0, .02),
+                                          0 0 0 1px rgba(0, 0, 0, .09);
+  --ui-button-hover-shadow               : inset 0 -3px 4px -1px rgba(0, 0, 0, .09),
+                                          0 2px 5px rgba(0, 0, 0, .13),
+                                          0 4px 4px rgba(0, 0, 0, .02),
+                                          0 0 0 1px rgba(0, 0, 0, .09);
+
+
+  /* 如果需要添加底部阴影，将下面的注释放开。以及 --nav-border */
+  /* --ui-main-box-shadow                   : inset 0 -3px 4px -1px rgba(0, 0, 0, .04),
+                                           0 2px 5px rgba(221, 150, 150, .04),
+                                           0 4px 4px rgba(0, 0, 0, .02),
+                                           0 0 0 1px rgba(0, 0, 0, .09);
+  --ui-main-hover-box-shadow             : inset 0 -3px 4px -1px rgba(0, 0, 0, .09),
+                                           0 2px 5px rgba(0, 0, 0, .13),
+                                           0 4px 4px rgba(0, 0, 0, .02),
+                                           0 0 0 1px rgba(0, 0, 0, .09); */
+
+  --ui-second-bg                         : #F3F3F3;
+  /* --ui-second-box-shadow                 : inset 0 -3px 4px -1px rgba(0, 0, 0, .04),
+                                           0 2px 5px rgba(221, 150, 150, .04),
+                                           0 4px 4px rgba(0, 0, 0, .02),
+                                           0 0 0 1px rgba(0, 0, 0, .09); */
+}

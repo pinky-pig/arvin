@@ -1,0 +1,16 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1301" height="630" viewBox="0 0 1301 630">
+  <defs>
+    <clipPath id="clip-cph_3">
+      <rect width="1301" height="630"/>
+    </clipPath>
+  </defs>
+  <g id="cph_3" data-name="cph – 3" clip-path="url(#clip-cph_3)">
+    <rect width="1301" height="630" fill="#ffe3a4"/>
+    <circle id="Ellipse_3" data-name="Ellipse 3" cx="463" cy="463" r="463" transform="translate(178 219)" fill="#ffc6d7"/>
+    <g id="Rectangle_42" data-name="Rectangle 42" transform="translate(-844.98 217.165) rotate(-30)" fill="none" stroke="#fff" strokeWidth="4" opacity="0.225">
+      <path d="M377,0H788a52,52,0,0,1,52,52V811a377,377,0,0,1-377,377H377A377,377,0,0,1,0,811V377A377,377,0,0,1,377,0Z" stroke="none"/>
+      <path d="M377,2H788a50,50,0,0,1,50,50V811a375,375,0,0,1-375,375H377A375,375,0,0,1,2,811V377A375,375,0,0,1,377,2Z" fill="none"/>
+    </g>
+  </g>
+</svg>

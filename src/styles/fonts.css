@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'Digital';
+  src: url('/fonts/DS-DIGIB.TTF');
+  font-weight: normal;
+  font-style: normal;
+}
+/* @font-face {
+  font-family: 'LXGW WenKai Screen R';
+  src: url('/fonts/LXGWWenKaiScreenR.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+} */

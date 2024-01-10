@@ -1,0 +1,149 @@
+@import 'mapbox-gl/dist/mapbox-gl.css';
+@import url('./fonts.css');
+@import url('./heti.min.css');
+@import url('./theme.css');
+@import 'shikiji-twoslash/style-rich.css';
+@import './markdown.css';
+@import './prose.css';
+
+
+/* https://etceteratype.co/gluten 字体 */
+/* @import url('https://fonts.googleapis.com/css2?family=Gluten:wght@100;200;300;400;500;600;700;800;900&display=swap'); */
+/* https://fonts.google.com/specimen/Grandstander 字体 */
+/* @import url('https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
+
+main {
+  font-family: var(--main-text-font-family);
+  letter-spacing: 0.6px;
+}
+
+
+/* 自定义的一些动画效果*/
+@keyframes shake {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  25%{
+    transform: scale(1.1) rotate(-20deg);
+  }
+  50% {
+    transform: scale(1) rotate(0deg);
+  }
+  75%{
+    transform: scale(1.1) rotate(20deg);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+/* 文字选中颜色 */
+::selection {
+  background-color: var(--global-text-selection-bg);
+  color: var(--global-text-selection-text);
+}
+
+/* 滚动条样式 */
+::-webkit-scrollbar{
+  width:6px;
+  height:6px;
+  background-color: transparent;
+  border-radius: 8px;
+}
+::-webkit-scrollbar-track-piece{
+  width:24px;
+  background-color:transparent;
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:vertical{
+  width:24px;
+  height:24px;
+  background: rgba(214, 212, 212,.3);
+  border-radius: 8px;
+  border: 1px solid var(--scrollbar-color);
+}
+::-webkit-scrollbar-thumb:horizontal{
+  width:24px;
+  height:24px;
+  background: rgba(214, 212, 212,.3);
+  border-radius: 8px;
+  border: 1px solid var(--scrollbar-color);
+}
+::-webkit-scrollbar-button{
+  display:none;
+}
+::-webkit-scrollbar-corner{
+  display:none;
+}
+
+/* mapbox display */
+a.mapboxgl-ctrl-logo{
+  display:none !important;
+}
+.mapboxgl-ctrl-attrib.mapboxgl-compact{
+  display:none !important;
+}
+.mapboxgl-ctrl-bottom-right{
+  display:none !important;
+}
+
+/* 跳转过渡 */
+/* .page-enter-active {
+  transition: all 0.1s ease-out;
+}
+.page-leave-active {
+  transition: all 0.3s cubic-bezier(1, 0.5, 0.8, 1);
+}
+.page-enter-from,
+.page-leave-to {
+  transform: translateY(20px);
+  opacity: 0;
+} */
+
+
+/* layout 跳转过度 */
+.page-enter-active,.page-leave-active {
+	transition: all .4s
+}
+
+.page-enter-from,.page-leave-to {
+	filter: blur(1rem);
+	opacity: 0
+}
+
+
+/* 使用 view-transition-api 黑白主题切换 */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+::view-transition-old(root) {
+  z-index: 1;
+}
+::view-transition-new(root) {
+  z-index: 9999;
+}
+.dark::view-transition-old(root) {
+  z-index: 9999;
+}
+.dark::view-transition-new(root) {
+  z-index: 1;
+}
+
+
+#nprogress {
+  pointer-events: none;
+}
+
+#nprogress .bar {
+  background: rgba(214, 212, 212,.3);
+  border: 1px solid var(--scrollbar-color);
+  opacity: 0.75;
+  position: fixed;
+  z-index: 1031;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+}
