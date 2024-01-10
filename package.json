@@ -77,6 +77,7 @@
     "pnpm": "^8.13.1",
     "radix-vue": "^1.2.7",
     "rollup": "^4.9.1",
+    "sharp": "0.32.6",
     "shikiji": "^0.9.12",
     "shikiji-twoslash": "^0.9.15",
     "simple-git-hooks": "^2.9.0",
