@@ -172,7 +172,7 @@ export default defineConfig({
           promises.push(
             fs.existsSync(`${id.slice(0, -3)}.png`)
               ? fs.copy(`${id.slice(0, -3)}.png`, `public/${path}`)
-              : generateOg(frontmatter.title!.trim(), `public/${path}`, (frontmatter.tags as string).trim()),
+              : generateOg(frontmatter.title!.trim(), `public/${path}`, (frontmatter.date as string)),
           )
           frontmatter.image = `https://mmeme.me/${path}`
         })()
