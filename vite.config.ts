@@ -38,7 +38,6 @@ export default defineConfig({
   },
 
   plugins: [
-    // Inspect(),
 
     VitePages({
       extensions: ['vue', 'md'],
@@ -173,9 +172,9 @@ export default defineConfig({
           promises.push(
             fs.existsSync(`${id.slice(0, -3)}.png`)
               ? fs.copy(`${id.slice(0, -3)}.png`, `public/${path}`)
-              : generateOg(frontmatter.title!.replace(/\s-\s.*$/, '').trim(), `public/${path}`),
+              : generateOg(frontmatter.title!.trim(), `public/${path}`, (frontmatter.tags as string).trim()),
           )
-          frontmatter.image = `https://antfu.me/${path}`
+          frontmatter.image = `https://mmeme.me/${path}`
         })()
         const head = defaults(frontmatter, options)
         return { head, frontmatter }
@@ -252,7 +251,7 @@ export default defineConfig({
 
 const ogSVg = fs.readFileSync('./scripts/og-template.svg', 'utf-8')
 
-async function generateOg(title: string, output: string) {
+async function generateOg(title: string, output: string, date: string) {
   if (fs.existsSync(output))
     return
 
@@ -262,8 +261,8 @@ async function generateOg(title: string, output: string) {
 
   const data: Record<string, string> = {
     line1: lines[0],
-    line2: lines[1],
-    line3: lines[2],
+    line2: lines[1] || date,
+    line3: lines[2] || date,
   }
   const svg = ogSVg.replace(/\{\{([^}]+)}}/g, (_, name) => data[name] || '')
 
