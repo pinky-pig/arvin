@@ -74,6 +74,7 @@ html.dark{
                                            0 0 0 1px rgba(200, 200, 200, .09);
   --ui-second-bg                         : #0D1117;
   --ui-second-box-shadow                 : none;
+  --cover-main-color                     : #0d1117;
 }
 
 html{
@@ -161,4 +162,6 @@ html{
                                            0 2px 5px rgba(221, 150, 150, .04),
                                            0 4px 4px rgba(0, 0, 0, .02),
                                            0 0 0 1px rgba(0, 0, 0, .09); */
+
+  --cover-main-color                     : #1e2982;
 }
