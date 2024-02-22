@@ -82,8 +82,7 @@ function startJelloShowAnimate() {
       { duration: 900, fill: 'forwards' },
     )
     animation.onfinish = () => {
-      // eslint-disable-next-line no-console
-      console.log('动画完成')
+
     }
   }
 }
@@ -107,8 +106,7 @@ function startJelloHideAnimate() {
       { duration: 900, fill: 'forwards' },
     )
     animation.onfinish = () => {
-      // eslint-disable-next-line no-console
-      console.log('动画完成')
+
     }
   }
 }

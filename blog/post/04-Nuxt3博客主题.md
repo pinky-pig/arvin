@@ -2,7 +2,7 @@
 title: Nuxt3博客主题
 date: 2023/06/13
 desc: 设置博客主题
-tags: ['#CSS']
+tags: ['#全部','#简单']
 cover: https://cdn.jsdelivr.net/gh/pinky-pig/pic-bed/images20230614204503.png
 ---
 
