@@ -11,17 +11,17 @@ const size = ref(180)
 const gap = ref(10)
 const containerRef = ref(null)
 
-const isMobileRef = ref(document.body.clientWidth <= 768 && /iPhone|iPad|iPod|Android/i.test(navigator.userAgent))
-const disabled = ref(isMobileRef.value)
-const bentoCells = ref(isMobileRef.value ? bentoCellsInMobile : bentoCellsInDesktop)
+const isMobileRef = ref(/iPhone|iPod|Android|Mobile/i.test(navigator.userAgent))
+const isIpadRef = ref(/iPad|Macintosh/i.test(navigator.userAgent))
+const disabled = ref(isMobileRef.value || isIpadRef.value)
+const bentoCells = ref(document.body.clientWidth <= 768 ? bentoCellsInMobile : bentoCellsInDesktop)
 
-if (isMobileRef.value) {
-  // 如果是移动端
+if (document.body.clientWidth <= 768) {
+  // 如果是宽度比较小
   maximumCells.value = 2
   size.value = (document.body.clientWidth - 50) / 2
 }
 else {
-  // 如果是桌面端
   maximumCells.value = 4
 }
 
