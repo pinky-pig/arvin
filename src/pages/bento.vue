@@ -12,8 +12,8 @@ const gap = ref(10)
 const containerRef = ref(null)
 
 const isMobileRef = ref(/iPhone|iPod|Android|Mobile/i.test(navigator.userAgent))
-const isIpadRef = ref(/iPad|Macintosh/i.test(navigator.userAgent))
-const disabled = ref(isMobileRef.value || isIpadRef.value)
+// const isIpadRef = ref(/iPad|Macintosh/i.test(navigator.userAgent))
+const disabled = ref(isMobileRef.value)
 const bentoCells = ref(document.body.clientWidth <= 768 ? bentoCellsInMobile : bentoCellsInDesktop)
 
 if (document.body.clientWidth <= 768) {
@@ -75,5 +75,8 @@ watch(width, () => {
 :deep(.bento-item-placeholder) {
   border-radius: 12px !important;
   background-color: var(--card--placeholder-bg) !important;
+}
+:deep(.bento-item) {
+  touch-action: none !important;
 }
 </style>
