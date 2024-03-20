@@ -7,9 +7,12 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
+    AirplaneWindow: typeof import('./components/AirplaneWindow.vue')['default']
+    AriplaneWindow: typeof import('./components/AriplaneWindow.vue')['default']
     Card: typeof import('./components/Bento/Wrapper/Card.vue')['default']
     CardList: typeof import('./components/blog/CardList.vue')['default']
     Content: typeof import('./components/blog/Content.vue')['default']
+    copy: typeof import('./components/CustomCard/ShadowBlock copy.vue')['default']
     CountDown: typeof import('./components/Bento/CountDown.vue')['default']
     Counter: typeof import('./components/Counter.vue')['default']
     Cover: typeof import('./components/Bento/Cover/index.vue')['default']
@@ -40,6 +43,7 @@ declare module 'vue' {
     P5Bg: typeof import('./components/Bento/P5Bg.vue')['default']
     Page: typeof import('./components/Bento/Wrapper/Page.vue')['default']
     PageView: typeof import('./components/PageView.vue')['default']
+    PlaneView: typeof import('./components/Bento/PlaneView.vue')['default']
     Plum: typeof import('./components/blog/Plum.vue')['default']
     Preview: typeof import('./components/Bento/Preview.vue')['default']
     Profile: typeof import('./components/Bento/Profile.vue')['default']
@@ -55,6 +59,7 @@ declare module 'vue' {
     ShadowCard: typeof import('./components/ui/ShadowCard.vue')['default']
     Sticker8: typeof import('./components/Bento/Sticker8.vue')['default']
     StrokeText: typeof import('./components/Bento/StrokeText.vue')['default']
+    SunRays: typeof import('./components/SunRays.vue')['default']
     Superellipse: typeof import('./components/Bento/Superellipse.vue')['default']
     TextList: typeof import('./components/blog/TextList.vue')['default']
     TheCounter: typeof import('./components/TheCounter.vue')['default']
