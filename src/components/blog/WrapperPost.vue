@@ -75,7 +75,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <main class="mx-auto max-w-760px w-full rounded-xl border-unset bg-transparent px-2 pt-10px text-start md:border md:border-[var(--blog--border)] md:border-solid md:bg-[var(--blog-bg)] md:p-10 md:px-36px">
+  <main style="font-family: LXGW WenKai Screen R;" class="mx-auto max-w-760px w-full rounded-xl border-unset bg-transparent px-2 pt-10px text-start md:border md:border-[var(--blog--border)] md:border-solid md:bg-[var(--blog-bg)] md:p-10 md:px-36px">
     <ClientOnly v-if="frontmatter.plum">
       <Plum />
     </ClientOnly>
