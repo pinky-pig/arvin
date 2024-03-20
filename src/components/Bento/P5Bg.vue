@@ -2,10 +2,32 @@
 import p5 from 'p5'
 
 const palettes_light = [
-  '#FAEBD7', '#F8BDEB', '#dcdcdc', '#c0504f', '#68b9b0', '#f29479', '#8c6677', '#588157', '#f7cad0', '#ff85a1', '#3a5a40', '#dad7cd',
+  '#FAEBD7',
+  '#F8BDEB',
+  '#dcdcdc',
+  '#c0504f',
+  '#68b9b0',
+  '#f29479',
+  '#8c6677',
+  '#588157',
+  '#f7cad0',
+  '#ff85a1',
+  '#3a5a40',
+  '#dad7cd',
 ]
 const palettes_dark = [
-  '#022450', '#352F44', '#2D4356', '#435B66', '#352F44', '#321E1E', '#212A3E', '#000000', '#393053', '#261C2C', '#3F4E4F', '#041C32',
+  '#022450',
+  '#352F44',
+  '#2D4356',
+  '#435B66',
+  '#352F44',
+  '#321E1E',
+  '#212A3E',
+  '#000000',
+  '#393053',
+  '#261C2C',
+  '#3F4E4F',
+  '#041C32',
 ]
 
 const p5sketchRef = ref<HTMLDivElement | null>(null)
@@ -14,9 +36,9 @@ onMounted(() => {
   p5Instance.value = initP5Canvas()
 })
 
-watch(isDark, () => {
-  handelRedraw()
-})
+// watch(isDark, () => {
+//   handelRedraw()
+// })
 function initP5Canvas() {
   if (!p5sketchRef.value)
     return
