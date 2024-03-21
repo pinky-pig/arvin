@@ -100,8 +100,8 @@ const props = defineProps({
   background: var(--color-second);
   box-shadow:
     0px 0px 10px #00000030,
-    inset 0px -2px 2px #435c6d,
-    inset 0px 0px 2px #19384f;
+    inset 0px -2px 2px var(--color-third),
+    inset 0px 0px 2px var(--color-second);
 }
 
 /* 外面的盒子 */
