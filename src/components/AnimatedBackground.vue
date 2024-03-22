@@ -26,7 +26,7 @@ async function startAnimation() {
         opacity: [1, 0],
         filter: ['blur(0px)', 'blur(20px)'],
       },
-      { duration: 1000, fill: 'forwards' },
+      { duration: 400, fill: 'forwards' },
     )
   }
 
@@ -38,7 +38,7 @@ async function startAnimation() {
         opacity: [0, 1],
         filter: ['blur(10px)', 'blur(0px)'],
       },
-      { duration: 1000, fill: 'forwards' },
+      { duration: 400, fill: 'forwards' },
     )
   }
 }
@@ -47,7 +47,7 @@ async function startAnimation() {
 <template>
   <div class="box">
     <img ref="realRef" :src="props.modelValue">
-    <img ref="fakeRef" class="fake" :src="lastUrl">
+    <img v-show="lastUrl" ref="fakeRef" class="fake" :src="lastUrl">
   </div>
 </template>
 

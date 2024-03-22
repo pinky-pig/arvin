@@ -17,6 +17,7 @@ import P5Bg from '~/components/Bento/P5Bg.vue'
 import Cover from '~/components/Bento/Cover/index.vue'
 import Sticker8 from '~/components/Bento/Sticker8.vue'
 import PlaneView from '~/components/Bento/PlaneView.vue'
+import SwitchImage from '~/components/Bento/SwitchImage.vue'
 
 // import GitHubSticker from '~/components/Bento/GitHubSticker.vue'
 
@@ -38,6 +39,7 @@ export const bentoCellsInDesktop = [
   { id: '15', x: 6, y: 4, width: 1, height: 2, component: markRaw(Cover) },
   { id: '16', x: 6, y: 5, width: 1, height: 1, component: markRaw(Sticker8) },
   { id: '17', x: 1, y: 6, width: 1, height: 2, component: markRaw(PlaneView) },
+  { id: '18', x: 3, y: 6, width: 2, height: 1, component: markRaw(SwitchImage) },
 ]
 
 export const bentoCellsInMobile = [
@@ -58,5 +60,6 @@ export const bentoCellsInMobile = [
   { id: '15', x: 1, y: 8, width: 1, height: 2, component: markRaw(Cover) },
   { id: '16', x: 1, y: 8, width: 1, height: 1, component: markRaw(Sticker8) },
   { id: '17', x: 1, y: 9, width: 1, height: 2, component: markRaw(PlaneView) },
+  { id: '18', x: 2, y: 10, width: 1, height: 1, component: markRaw(SwitchImage) },
 
 ]
