@@ -46,8 +46,13 @@ function countdownTime() {
 <template>
   <CustomCardShadowBlock class="h-300px w-400px text-5rem">
     <div class="relative h-full w-full" style="font-family: Digital">
-      <span class="absolute left-50% top-50% w-180px -translate-1/2">
-        <span>{{ time }}</span>
+      <span class="absolute left-50% top-50% w-180px flex flex-row -translate-1/2">
+        <span>{{ time.slice(0, 2) }}</span>
+        <div class="relative grid w-fit place-items-center">
+          <div class="opacity-0">:</div>
+          <div class="absolute left-1px top-0 w-full">.</div>
+        </div>
+        <span>{{ time.slice(3) }}</span>
       </span>
       <span
         v-show="Number(time) !== 100 && Number(time) !== 100.00"
