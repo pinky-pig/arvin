@@ -3,20 +3,18 @@ title: 开发一个炫酷的DOM转粒子动画
 date: 2024/01/08
 desc: canvas 粒子
 tags: ['#全部','#困难']
-cover: https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/3acbd75efd0048e2bb6ef35cbf3d1008~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1575&h=1101&s=2104962&e=gif&f=136&b=e4e4e4
+cover: https://cdn.jsdelivr.net/gh/pinky-pig/pic-bed/imagesdom2particle1.awebp
 ---
 
 [[toc]]
 
-![html2particleNew.gif](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/3acbd75efd0048e2bb6ef35cbf3d1008~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1575&h=1101&s=2104962&e=gif&f=136&b=e4e4e4)
+![html2particleNew.gif](https://cdn.jsdelivr.net/gh/pinky-pig/pic-bed/imagesdom2particle1.awebp)
 
 ## 前言
 
-![t.jpg](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4ff6a6d3b9984ae19cdfc6502381d40d~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1170&h=2532&s=244119&e=jpg&b=16202c)
-
 在我网络冲浪的时候，无意之间看到了一位大佬做的粒子效果很是炫酷，不过只做了 Mac 端的示例，我于是就学习做了一个 Web 端的 DOM 转 Canvas 粒子动画效果。代码仓库、说明文档及NPM包都在结尾。
 
-![html2particle.gif](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f444f5706db24294842c7019e4328331~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1575&h=1058&s=4758074&e=gif&f=304&b=fcfcfc)
+![dom2particle2](https://cdn.jsdelivr.net/gh/pinky-pig/pic-bed/imagesdom2particle2.awebp)
 
 ## 实现思路
 
@@ -32,7 +30,7 @@ cover: https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/3acbd75efd0048e2bb6ef35
 
 既然是要将 DOM 转为 Canvas 粒子，那么输入自然是 DOM 。这里预设了两种粒子效果，就如开篇的图所示。
 
-![image.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/60b96864283d4107bfc2e1330ddb1eaf~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=997&h=268&s=48967&e=png&b=1f1f1f)
+![dom2particle3](https://cdn.jsdelivr.net/gh/pinky-pig/pic-bed/imagesdom2particle3.awebp)
 
 **获取图像数据**
 
@@ -145,7 +143,7 @@ img {
 
 码上掘金演示的是原生 HTML 示例。
 
-[jcode](https://code.juejin.cn/pen/7327590990317879331)
+[👀 码上掘金地址](https://code.juejin.cn/pen/7327590990317879331)
 
 ## 结尾
 

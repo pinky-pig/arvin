@@ -3,12 +3,12 @@ title: 开发一个Superellipse超椭圆生成工具
 date: 2024/01/08
 desc: 超椭圆工具
 tags: ['#全部','#一般般']
-cover: https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a48a0b0fb00c4c26b7d6ea8d2120d852~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=589&h=416&s=14850974&e=gif&f=741&b=28212a
+cover: https://cdn.jsdelivr.net/gh/pinky-pig/pic-bed/imagessuperellipse1.awebp
 ---
 
 [[toc]]
 
-![Kapture 2023-09-23 at 11.50.14.gif](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a48a0b0fb00c4c26b7d6ea8d2120d852~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=589&h=416&s=14850974&e=gif&f=741&b=28212a)
+![superellipse1](https://cdn.jsdelivr.net/gh/pinky-pig/pic-bed/imagessuperellipse1.awebp)
 
 # 前言
 
@@ -24,19 +24,20 @@ cover: https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a48a0b0fb00c4c26b7d6ea8
     </path>
   </svg>
 
-  <img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/220a1305f4294c3f9b9e656fc131a10d~tplv-k3u1fbpfcp-image.image#?w=32\&h=32\&s=914\&e=svg\&a=1\&b=fe6702" width="100" />
 </p>
 
 原研哉采用的就是 `n = 3` 的超椭圆。
 
-![image.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6e3a2ec2804548e88813b5603cae1e52~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=640&h=336&s=114563&e=png&b=0f0d10)
+![superellipse2](https://cdn.jsdelivr.net/gh/pinky-pig/pic-bed/imagessuperellipse2.awebp)
 
 而后再去观察日常生活的最常见的超椭圆可能就是各个手机系统的图标了，很多都是应用的超椭圆，只是 n 的值可能不太一样。
 
 **超椭圆**的定义可以参考下面这个：
 
 > 是在[笛卡儿坐标系](https://zh.wikipedia.org/wiki/%E7%AC%9B%E5%8D%A1%E5%84%BF%E5%9D%90%E6%A0%87%E7%B3%BB '笛卡儿坐标系')下满足以下方程式的点的集合：
-> ![{\displaystyle |{\frac {x}{a}}|^{n}!+|{\frac {y}{b}}|^{n}!=1}](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ebe26bc5b4cc450aae417e040564e67b~tplv-k3u1fbpfcp-image.image#?w=93&h=30&s=5786&e=svg&a=1&b=000000)
+>
+> <img src="https://cdn.jsdelivr.net/gh/pinky-pig/pic-bed/imagesdikaer.svg" style="width: 120px"  alt="{\displaystyle |{\frac {x}{a}}|^{n}!+|{\frac {y}{b}}|^{n}!=1}" align=center />
+
 > 其中*n*、*a*及*b*为正数。这里设置 a b 的值都为 1 ，简化为 `|x|^n + |y|^n = 1`
 
 # 实现功能
@@ -52,9 +53,9 @@ cover: https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a48a0b0fb00c4c26b7d6ea8
 - [√] 预设超椭圆 Demo
 - [√] 小彩蛋，（点击中间预览 SVG 随机 ｜ 按下键盘空格 ）更换背景色。
 
-![image.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/55427c9af9ad4232b9897dca480b62fb~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=2134&h=1550&s=2943263&e=png&b=242b34)
+![superellipse4](https://cdn.jsdelivr.net/gh/pinky-pig/pic-bed/imagessuperellipse4.awebp)
 
-![image.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/713492ad264b44e18957fdc7238ba282~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=2134&h=1550&s=467106&e=png&b=24292f)
+![superellipse5](https://cdn.jsdelivr.net/gh/pinky-pig/pic-bed/imagessuperellipse5.awebp)
 
 # 核心代码
 

@@ -59,7 +59,7 @@ yo eslint:rule
 
 ##### 使用 `yo eslint:plugin` 创建插件:
 
-![Pasted image 20240327153535](https://cdn.jsdelivr.net/gh/pinky-pig/pic-bed/imagesPasted image 20240327153535.png)
+![Pasted%20image%2020240327153535](https://cdn.jsdelivr.net/gh/pinky-pig/pic-bed/imagesPasted%20image%2020240327153535.png)
 
 a. 使用 `VsCode` 打开文件夹
 
@@ -86,11 +86,11 @@ c. 文件目录介绍
 
 ##### 使用 `yo eslint:rule` 创建规则:
 
-![Pasted image 20240327155110](https://cdn.jsdelivr.net/gh/pinky-pig/pic-bed/imagesPasted image 20240327155110.png)
+![Pasted%20image%2020240327155110](https://cdn.jsdelivr.net/gh/pinky-pig/pic-bed/imagesPasted%20image%2020240327155110.png)
 
 a. 生成的文件目录
 
-![Pasted image 20240327155353](https://cdn.jsdelivr.net/gh/pinky-pig/pic-bed/imagesPasted image 20240327155353.png)
+![Pasted image 20240327155353](https://cdn.jsdelivr.net/gh/pinky-pig/pic-bed/imagesPasted%20image%2020240327155353.png)
 
 b. 打开要开发的规则文件代码看看
 
@@ -142,7 +142,7 @@ ruleTester.run('no-alert', rule, {
 d. 准备编写规则 Rule 代码
 测试用例已经写了一个，`alert(0)`是报错的，接下来就是要在 Rule 代码中实现。
 
-![Pasted image 20240327160553](https://cdn.jsdelivr.net/gh/pinky-pig/pic-bed/imagesPasted image 20240327160553.png)
+![Pasted image 20240327160553](https://cdn.jsdelivr.net/gh/pinky-pig/pic-bed/imagesPasted%20image%2020240327160553.png)
 
 由上面AST分析器可知，alert会在这里触发。于是开始**调试代码**。其实在使用脚手架创建项目的时候，已经安装了调试代码的依赖，就是 `mocha` 这个包。
 
@@ -154,10 +154,10 @@ d. 准备编写规则 Rule 代码
 4. 会发现变量跟上面 [astexplorer](https://astexplorer.net/) 的结构都一样，那么下面就好写了
 
 打断点调试：
-![Pasted image 20240327163108](https://cdn.jsdelivr.net/gh/pinky-pig/pic-bed/imagesPasted image 20240327163108.png)
+![Pasted image 20240327163108](https://cdn.jsdelivr.net/gh/pinky-pig/pic-bed/imagesPasted%20image%2020240327163108.png)
 
 变量：
-![Pasted image 20240327163257](https://cdn.jsdelivr.net/gh/pinky-pig/pic-bed/imagesPasted image 20240327163257.png)
+![Pasted image 20240327163257](https://cdn.jsdelivr.net/gh/pinky-pig/pic-bed/imagesPasted%20image%2020240327163257.png)
 
 e. 继续开发 Rule 代码
 
@@ -201,7 +201,7 @@ module.exports = {
 
 上面的代码已经完成了80%，运行测试用例，发现是报错的。查看报错信息，绿色是测试期待的输出，红色是实际输出不一致。我们知道测试期待的是有个 messageId 提示。
 
-![Pasted image 20240327164210](https://cdn.jsdelivr.net/gh/pinky-pig/pic-bed/imagesPasted image 20240327164210.png)
+![Pasted image 20240327164210](https://cdn.jsdelivr.net/gh/pinky-pig/pic-bed/imagesPasted%20image%2020240327164210.png)
 
 那么我们将代码改一下，再运行测试用例就会发现全部通过了。
 
@@ -218,7 +218,7 @@ if (node.expression.callee.name === 'alert') {
 }
 ```
 
-![Pasted image 20240327164418](https://cdn.jsdelivr.net/gh/pinky-pig/pic-bed/imagesPasted image 20240327164418.png)
+![Pasted image 20240327164418](https://cdn.jsdelivr.net/gh/pinky-pig/pic-bed/imagesPasted%20image%2020240327164418.png)
 
 ##### 再创建一条规则:
 
@@ -323,7 +323,7 @@ module.exports = {
 
 这个时候会发现 package.json 中多了一个 `"custom-eslint": "link:.."` ,而且往 node_modules 中查找 ，发现有刚才自定义的插件文件夹，这就说明自定义的插件包安装成功了。
 
-![Pasted image 20240328111859](https://cdn.jsdelivr.net/gh/pinky-pig/pic-bed/imagesPasted image 20240328111859.png)
+![Pasted image 20240328111859](https://cdn.jsdelivr.net/gh/pinky-pig/pic-bed/imagesPasted%20image%2020240328111859.png)
 
 既然已经安装成功，那么接下来就是如何应用了。
 

@@ -3,12 +3,12 @@ title: 简单使用JS&CSS随机生成多边形毛玻璃背景
 date: 2024/01/08
 desc: 随机生成多边形毛玻璃
 tags: ['#全部','#简单']
-cover: https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c837eb643b444bad85734d11c033f08c~tplv-k3u1fbpfcp-watermark.image?
+cover: https://cdn.jsdelivr.net/gh/pinky-pig/pic-bed/imagesrandom-bg-1.webp
 ---
 
 [[toc]]
 
-![random-polygon-filter-noise.gif](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c837eb643b444bad85734d11c033f08c~tplv-k3u1fbpfcp-watermark.image?)
+![random-bg-1](https://cdn.jsdelivr.net/gh/pinky-pig/pic-bed/imagesrandom-bg-1.webp)
 
 > 更新： 2023/01/11 - Svg滤镜实现
 
@@ -37,7 +37,7 @@ function getRandomIntInclusive(min: number, max: number) {
 
 这里我在这个网站上找的配色[coolors](https://coolors.co/)，主要是看其方便拷贝色值，在其地址栏URL就有了色值组合，直接拿来用。
 
-![image.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/446610aefcc3478bb5d004bd53f1d015~tplv-k3u1fbpfcp-watermark.image?)
+![random-bg-2](https://cdn.jsdelivr.net/gh/pinky-pig/pic-bed/imagesrandom-bg-2.webp)
 
 这是随便找的几个色彩组合。
 
@@ -121,7 +121,7 @@ function randomGeneratePolygon() {
 
 上面几步操作以及完成了百分之九十，已经达到了随机生成三个不同颜色的多边形，如下所示。
 
-![Random-Polygon.gif](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/7d76ef81a3554dfda2458e07afee8b8c~tplv-k3u1fbpfcp-watermark.image?)
+![random-bg-3](https://cdn.jsdelivr.net/gh/pinky-pig/pic-bed/imagesrandom-bg-3.webp)
 
 这里我们加一个 `backdrop-filter`就能使背景模糊了~~
 
@@ -140,13 +140,13 @@ function randomGeneratePolygon() {
 
 看看效果⭐
 
-![Random-Polygon-filter.gif](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/82b4cbab837a4d09b88b218d6d36c4f3~tplv-k3u1fbpfcp-watermark.image?)
+![random-bg-4](https://cdn.jsdelivr.net/gh/pinky-pig/pic-bed/imagesrandom-bg-4.webp)
 
 甚至还可以再加一个噪声图片处理一下，让其更加模糊🤡，参考这个[Codepen](https://codepen.io/pinky-pig/pen/ZEjzzpX)，只是新增一句`background-image: url(https://arc.net/noise.png);`
 
 看看效果🍔
 
-![random-polygon-filter-noise.gif](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c837eb643b444bad85734d11c033f08c~tplv-k3u1fbpfcp-watermark.image?)
+![random-bg-5](https://cdn.jsdelivr.net/gh/pinky-pig/pic-bed/imagesrandom-bg-5.webp)
 
 ## 全部代码
 
@@ -240,7 +240,7 @@ randomGeneratePolygon()
 
 上述虽然已经实现了，但是filter属性需要浏览器的支持度较高，比如火狐浏览器就不支持这个。而且我再实际开发过程中，还遇到了比如给其添加`border:1px solid black;`，其也会模糊，效果非常不好；还有若再在border的基础上给其添加transform动画的时候，其会有闪烁效果，影响更加不好了。
 
-![bug-filter.gif](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/0e740246134b414e87c9746bb6d64231~tplv-k3u1fbpfcp-watermark.image?)
+![random-bg-6](https://cdn.jsdelivr.net/gh/pinky-pig/pic-bed/imagesrandom-bg-6.webp)
 
 针对`backdrop-filter`浏览器支持度的问题，查阅文档的时候，看到张鑫旭老师的文章，火狐浏览器可以使用Svg滤镜实现。
 
