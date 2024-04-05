@@ -175,6 +175,7 @@ export default defineConfig({
               : generateOg(frontmatter.title!.trim(), `public/${path}`, (frontmatter.date as string)),
           )
           frontmatter.image = `https://mmeme.me/${path}`
+          frontmatter.description = frontmatter?.desc as string || ''
         })()
         const head = defaults(frontmatter, options)
         return { head, frontmatter }
