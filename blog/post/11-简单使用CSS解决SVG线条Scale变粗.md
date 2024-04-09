@@ -20,7 +20,7 @@ cover: https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/80d4d316531f44aaa91f509
 
 `vector-effect="non-scaling-stroke"`
 
-```xml
+```html
 <svg viewBox="0 0 500 240">
   <!-- normal -->
   <path

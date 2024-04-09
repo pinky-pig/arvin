@@ -66,7 +66,7 @@ cover: https://github.com/processing/p5.js/blob/main/README.md#contributors
 
 于是，俺很诚恳地写下了如下的 commit 描述🤣。
 
-```md
+```
 title:
 Fix reference translation issue[processing#1301](https://github.com/processing/p5.js-website/issues/1301)
 description:

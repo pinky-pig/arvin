@@ -37,14 +37,14 @@ const config_draw = {
 const config_linear = { size: 18, start: { taper: true } }
 
 const pathColor = ref('#000000')
-async function getCurrentColor(key: string) {
+async function getCurrentColor(_key: string) {
   pathColor.value = '#000000'
 }
 
 // 默认是false，橡皮擦效果，直接消失。
 // true，不会消失，除非alt
 const mode = ref(false)
-async function getCurrentMode(key: string) {
+async function getCurrentMode(_key: string) {
   mode.value = false
 }
 
@@ -66,7 +66,7 @@ watch(() => points.value, () => {
   deep: true,
 })
 
-watch(svgPointerEvent, (v) => {
+watch(svgPointerEvent, (_v) => {
   pathData.value = ''
   points.value = []
   pathDataHistory.value = []
@@ -94,7 +94,7 @@ function handlePointerMove(e: PointerEvent | any) {
 
 let timestamp = 0
 let interval = 0
-function handleUp(e: PointerEvent | any) {
+function handleUp(_e: PointerEvent | any) {
   cancelAnimationFrame(interval)
 
   if (mode.value) {

@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import { parseTitleFromContentList } from '~/utils/blog'
+import { registerGiscus } from '~/utils/giscus'
 
-const props = defineProps({
+defineProps({
   emptyTip: {
     type: String,
     required: false,
@@ -31,7 +32,6 @@ onActivated(() => {
       <ContentDoc :path="path">
         <template #default="{ doc }">
           <main class="mx-auto max-w-872px w-full flex rounded-xl border-unset bg-transparent px-2 pt-10px text-start md:border md:border-[var(--blog--border)] md:border-solid md:bg-[var(--blog-bg)] md:p-4 md:px-36px">
-            <!-- <div class="heti max-w-50rem w-full flex-shrink-0 flex-grow-0 p-[0.8rem,2rem,4rem] pb-20"> -->
             <div class="max-w-50rem w-full flex-shrink-0 flex-grow-0 p-[0.8rem,2rem,4rem] pb-20">
               <!-- title -->
               <h1 class="content-title flex align-middle">

@@ -52,16 +52,18 @@ watch(width, () => {
       ref="containerRef"
       grid mx-auto w-full select-none place-items-center
     >
-      <V3bento
-        class="bento-container"
-        :bento-cells="bentoCells"
-        :size="size"
-        :gap="gap"
-        :disabled="disabled"
-        :maximum-cells="maximumCells"
-        @drag-start="print('drag-start', $event)"
-        @drag-end="print('drag-end', $event)"
-      />
+      <client-only>
+        <V3bento
+          class="bento-container"
+          :bento-cells="bentoCells"
+          :size="size"
+          :gap="gap"
+          :disabled="disabled"
+          :maximum-cells="maximumCells"
+          @drag-start="print('drag-start', $event)"
+          @drag-end="print('drag-end', $event)"
+        />
+      </client-only>
     </div>
     <router-view />
   </div>

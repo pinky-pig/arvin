@@ -12,10 +12,10 @@ const isOpen = ref(false)
         />
       </svg>
     </div>
-    <ClientOnly>
+    <client-only>
       <!-- <UModal v-model="isOpen"> -->
       <FreeDraw v-if="isOpen" />
       <!-- </UModal> -->
-    </ClientOnly>
+    </client-only>
   </ShadowCard>
 </template>
