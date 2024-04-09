@@ -175,6 +175,7 @@ export default defineConfig({
               : generateOg(frontmatter.title!.trim(), `public/${path}`, (frontmatter.date as string)),
           )
           frontmatter.image = `https://mmeme.me/${encodeURIComponent(path)}`
+          frontmatter.description = frontmatter?.desc as string || ''
         })()
         const head = defaults(frontmatter, options)
         return { head, frontmatter }
@@ -183,6 +184,7 @@ export default defineConfig({
 
     // https://github.com/antfu/vite-plugin-pwa
     VitePWA({
+      selfDestroying: true, // 禁用了
       registerType: 'autoUpdate',
       includeAssets: ['favicon.svg', 'safari-pinned-tab.svg'],
       manifest: {
