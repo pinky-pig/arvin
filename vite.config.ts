@@ -16,7 +16,7 @@ import Unocss from 'unocss/vite'
 import WebfontDownload from 'vite-plugin-webfont-dl'
 import VueRouter from 'unplugin-vue-router/vite'
 import { VueRouterAutoImports } from 'unplugin-vue-router'
-import VitePages from 'vite-plugin-pages'
+import Pages from 'vite-plugin-pages'
 import fs from 'fs-extra'
 import matter from 'gray-matter'
 
@@ -39,7 +39,7 @@ export default defineConfig({
 
   plugins: [
 
-    VitePages({
+    Pages({
       extensions: ['vue', 'md'],
       dirs: [
         { dir: 'src/pages', baseRoute: '' },
