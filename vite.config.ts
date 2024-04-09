@@ -52,7 +52,15 @@ export default defineConfig({
         if (!path.includes('projects.md') && path.endsWith('.md')) {
           const md = fs.readFileSync(path, 'utf-8')
           const { data } = matter(md)
-          route.meta = Object.assign(route.meta || {}, { frontmatter: data })
+          route.meta = Object.assign(
+            route.meta || {},
+            {
+              frontmatter: {
+                ...data,
+                description: data.desc,
+              },
+            },
+          )
         }
 
         return route
