@@ -174,7 +174,7 @@ export default defineConfig({
               ? fs.copy(`${id.slice(0, -3)}.png`, `public/${path}`)
               : generateOg(frontmatter.title!.trim(), `public/${path}`, (frontmatter.date as string)),
           )
-          frontmatter.image = `https://mmeme.me/${path}`
+          frontmatter.image = `https://mmeme.me/${encodeURIComponent(path)}`
         })()
         const head = defaults(frontmatter, options)
         return { head, frontmatter }

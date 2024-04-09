@@ -9,11 +9,9 @@ declare module 'vue' {
   export interface GlobalComponents {
     AirplaneWindow: typeof import('./components/AirplaneWindow.vue')['default']
     AnimatedBackground: typeof import('./components/AnimatedBackground.vue')['default']
-    AriplaneWindow: typeof import('./components/AriplaneWindow.vue')['default']
     Card: typeof import('./components/Bento/Wrapper/Card.vue')['default']
     CardList: typeof import('./components/blog/CardList.vue')['default']
     Content: typeof import('./components/blog/Content.vue')['default']
-    copy: typeof import('./components/Bento/Weekly copy.vue')['default']
     CountDown: typeof import('./components/Bento/CountDown.vue')['default']
     Counter: typeof import('./components/Counter.vue')['default']
     Cover: typeof import('./components/Bento/Cover/index.vue')['default']
