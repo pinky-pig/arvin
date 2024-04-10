@@ -3,7 +3,7 @@ title: 开发自己的ESLint插件
 date: 2024/04/01
 desc: ESLint 规则
 tags: ['#全部','#困难']
-cover: https://cdn.jsdelivr.net/gh/pinky-pig/pic-bed/images20240222111638.png
+cover: https://cdn.jsdelivr.net/gh/pinky-pig/pic-bed/imagesPasted%20image%2020240327153535.png
 ---
 
 [[toc]]
