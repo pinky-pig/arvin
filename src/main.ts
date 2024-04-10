@@ -58,6 +58,10 @@ export const createApp = ViteSSG(
         if (hasChinese(decodePath) && decodePath !== val.path)
           router.replace(decodePath)
 
+        // 因为页面是共用一个 layout ，所以这里设置一下。页面切花动画是 .4s ， 这里延迟设置为 0.4
+        setTimeout(() => {
+          window.scrollTo(0, 0)
+        }, 400)
         NProgress.start()
       })
       router.afterEach(() => {
