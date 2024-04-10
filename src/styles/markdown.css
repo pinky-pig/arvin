@@ -168,7 +168,17 @@ h6:focus .header-anchor {
   left: 20px;
   z-index: 200;
   overflow: hidden;
-  --uno: hidden lg-flex flex-col w-100px lg-w-200px xl-w-300px;
+  --uno: hidden! lg-flex flex-col w-100px lg-w-200px xl-w-300px;
+}
+
+/* 放到中间 */
+@media only screen and (max-width: 1080px) {
+  .table-of-contents {
+    position: unset;
+  }
+  .table-of-contents > ul{
+    opacity: 1 !important;
+  }
 }
 
 .table-of-contents-anchor {
