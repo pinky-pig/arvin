@@ -22,6 +22,20 @@ function handleClick(item: typeof allPosts.value[0]) {
   currentBlogTag.value = item.name
 }
 
+/**
+ * 1. 从地址栏找，没有的话，默认全部
+ * 2. 切换的时候，需要更新地址栏
+ */
+const hash = window.location.hash
+currentBlogTag.value = hash
+  ? decodeURIComponent(hash)
+  : (currentBlogTag.value || '#全部')
+
+watchEffect(() => {
+  if (currentBlogTag.value)
+    window.location.hash = currentBlogTag.value
+})
+
 const currentTagAndList = computed(() => allPosts.value.find(i => i.name === currentBlogTag.value) || allPosts.value[0])
 
 function getPostList(posts: any[]) {
