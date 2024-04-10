@@ -42,8 +42,8 @@ dependencies:
     specifier: ^2.1.0
     version: 2.1.0
   v3-bento:
-    specifier: 0.0.2-alpha.5.7
-    version: 0.0.2-alpha.5.7
+    specifier: 0.0.2-alpha.6.0
+    version: 0.0.2-alpha.6.0
   vue:
     specifier: ^3.4.15
     version: 3.4.15(typescript@5.3.3)
@@ -10659,8 +10659,8 @@ packages:
     hasBin: true
     dev: true
 
-  /v3-bento@0.0.2-alpha.5.7:
-    resolution: {integrity: sha512-BJ9zfdCccfJN9gnM0yeu51Ha93Y1Uo3BGOX7e3TrMqa6XnIdKPxKA23HKKqPYb0oDGmieLq8w4l7jR4PaLRQRA==}
+  /v3-bento@0.0.2-alpha.6.0:
+    resolution: {integrity: sha512-KLKlMRndlubVzoBjuwV7FGjO8FRMEvhppsERgqaqZPvSJgyly6U5r2/9r2NOSVmAaA8awe1zUlpNoz+gwW6fmQ==}
     dev: false
 
   /validate-npm-package-license@3.0.4:
