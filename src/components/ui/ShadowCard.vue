@@ -23,15 +23,14 @@
   box-shadow: var(--ui-main-box-shadow);
   display: flex;
   flex-direction: column;
-
 }
-.card-content{
+.card-content {
   overflow: hidden;
-  pointer-events: none;
+  /* pointer-events: none; */
   flex: 1 1 0%;
   background: var(--ui-second-bg);
   border-radius: 5px;
-  transition: all .3s;
+  transition: all 0.3s;
   box-shadow: var(--ui-second-box-shadow);
 }
 </style>
