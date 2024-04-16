@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <div class="relative select-none overflow-hidden bg-[var(--card--bg)]">
+  <div class="relative select-none overflow-hidden rounded-10px bg-[var(--card--bg)]">
     <img
       class="lozad pointer-events-none h-180px w-370px select-none object-fill"
       :style="{ opacity: isDark ? 0 : 1 }"
@@ -23,7 +23,7 @@
 </template>
 
 <style scoped>
-.detail-arrow{
+.detail-arrow {
   pointer-events: auto;
   display: flex;
   justify-content: center;
@@ -40,7 +40,7 @@
   transition: box-shadow 0.2s ease-out 0s;
 }
 
-.detail-arrow:hover{
+.detail-arrow:hover {
   cursor: pointer;
   box-shadow: var(--card--border) 0px 0px 0px 5px;
 }
