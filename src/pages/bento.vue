@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import V3bento from 'v3-bento'
+import { Bento } from 'v3-bento'
 import { bentoCellsInDesktop, bentoCellsInMobile } from '~/utils/bento'
 
 function print(_val: string, _e: any) {
@@ -53,9 +53,9 @@ watch(width, () => {
       grid mx-auto w-full select-none place-items-center
     >
       <client-only>
-        <V3bento
-          class="bento-container"
+        <Bento
           :bento-cells="bentoCells"
+          class="bento-container"
           :size="size"
           :gap="gap"
           :disabled="disabled"
