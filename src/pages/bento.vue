@@ -62,7 +62,11 @@ watch(width, () => {
           :maximum-cells="maximumCells"
           @drag-start="print('drag-start', $event)"
           @drag-end="print('drag-end', $event)"
-        />
+        >
+          <template #bento-item-placeholder>
+            <div class="h-full w-full rounded-3xl bg-current opacity-10" />
+          </template>
+        </Bento>
       </client-only>
     </div>
     <router-view />
