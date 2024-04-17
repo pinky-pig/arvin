@@ -55,12 +55,12 @@ dependencies:
     version: 9.12.1(vue@3.4.23)
   vue-router:
     specifier: ^4.2.5
-    version: 4.3.0(vue@3.4.23)
+    version: 4.3.1(vue@3.4.23)
 
 devDependencies:
   '@antfu/eslint-config':
     specifier: ^2.6.3
-    version: 2.14.0(@vue/compiler-sfc@3.4.23)(eslint-plugin-format@0.1.0)(eslint@8.57.0)(typescript@5.4.5)(vitest@1.5.0)
+    version: 2.14.0(@vue/compiler-sfc@3.4.23)(eslint-plugin-format@0.1.1)(eslint@8.57.0)(typescript@5.4.5)(vitest@1.5.0)
   '@iconify-json/carbon':
     specifier: ^1.1.28
     version: 1.1.31
@@ -132,7 +132,7 @@ devDependencies:
     version: 2.15.2(eslint@8.57.0)
   eslint-plugin-format:
     specifier: ^0.1.0
-    version: 0.1.0(eslint@8.57.0)
+    version: 0.1.1(eslint@8.57.0)
   feed:
     specifier: ^4.2.2
     version: 4.2.2
@@ -213,7 +213,7 @@ devDependencies:
     version: 0.25.2(rollup@4.14.3)(vite@5.2.9)
   unplugin-vue-router:
     specifier: ^0.7.0
-    version: 0.7.0(rollup@4.14.3)(vue-router@4.3.0)(vue@3.4.23)
+    version: 0.7.0(rollup@4.14.3)(vue-router@4.3.1)(vue@3.4.23)
   vite:
     specifier: ^5.0.12
     version: 5.2.9
@@ -231,13 +231,13 @@ devDependencies:
     version: 0.17.5(vite@5.2.9)(workbox-build@7.0.0)(workbox-window@7.0.0)
   vite-plugin-vue-layouts:
     specifier: ^0.10.0
-    version: 0.10.0(vite@5.2.9)(vue-router@4.3.0)(vue@3.4.23)
+    version: 0.10.0(vite@5.2.9)(vue-router@4.3.1)(vue@3.4.23)
   vite-plugin-webfont-dl:
     specifier: ^3.9.1
     version: 3.9.3(vite@5.2.9)
   vite-ssg:
     specifier: ^0.23.6
-    version: 0.23.6(critters@0.0.20)(vite@5.2.9)(vue-router@4.3.0)(vue@3.4.23)
+    version: 0.23.6(critters@0.0.20)(vite@5.2.9)(vue-router@4.3.1)(vue@3.4.23)
   vite-ssg-sitemap:
     specifier: ^0.6.1
     version: 0.6.1
@@ -246,7 +246,7 @@ devDependencies:
     version: 1.5.0
   vue-router-better-scroller:
     specifier: ^0.0.0
-    version: 0.0.0(vue-router@4.3.0)(vue@3.4.23)
+    version: 0.0.0(vue-router@4.3.1)(vue@3.4.23)
   vue-tsc:
     specifier: ^1.8.27
     version: 1.8.27(typescript@5.4.5)
@@ -266,7 +266,7 @@ packages:
       '@jridgewell/trace-mapping': 0.3.25
     dev: true
 
-  /@antfu/eslint-config@2.14.0(@vue/compiler-sfc@3.4.23)(eslint-plugin-format@0.1.0)(eslint@8.57.0)(typescript@5.4.5)(vitest@1.5.0):
+  /@antfu/eslint-config@2.14.0(@vue/compiler-sfc@3.4.23)(eslint-plugin-format@0.1.1)(eslint@8.57.0)(typescript@5.4.5)(vitest@1.5.0):
     resolution: {integrity: sha512-9yn/5n/dZnH7qSlCTk1Z3VWPbNb3Wfq31GflQuXkh3jUqSCHuDbuspfDAQ3/ABnrPRJSP1Nm7yTKJbXfcQ3p+A==}
     hasBin: true
     peerDependencies:
@@ -320,7 +320,7 @@ packages:
       eslint-merge-processors: 0.1.0(eslint@8.57.0)
       eslint-plugin-antfu: 2.1.2(eslint@8.57.0)
       eslint-plugin-eslint-comments: 3.2.0(eslint@8.57.0)
-      eslint-plugin-format: 0.1.0(eslint@8.57.0)
+      eslint-plugin-format: 0.1.1(eslint@8.57.0)
       eslint-plugin-import-x: 0.5.0(eslint@8.57.0)(typescript@5.4.5)
       eslint-plugin-jsdoc: 48.2.3(eslint@8.57.0)
       eslint-plugin-jsonc: 2.15.1(eslint@8.57.0)
@@ -1686,8 +1686,8 @@ packages:
     resolution: {integrity: sha512-WjsC4yLybR5/76+d/2s36nOBGjETe+jJR//ddFHohDXKdis+FTUv7dJ00kmd6g0AKQwDITayM1Nid10gFNG0Yg==}
     dev: true
 
-  /@dprint/toml@0.5.4:
-    resolution: {integrity: sha512-d+5GwwzztZD0QixmOBhaO6nWVLsAeYsJ1HJYNxDoDRbASFCpza9BBVshG5ctBRXCkkIHhD9BO1SnbOoRQltUQw==}
+  /@dprint/toml@0.6.1:
+    resolution: {integrity: sha512-1fmGui+BNLKNonG3fvjT+thtL8u0pL1GsIuRbhgRnP+UOkcfPgoUsgNFctDmOE13y6MX4TVvxXKKrMY/qwXqkA==}
     dev: true
 
   /@es-joy/jsdoccomment@0.42.0:
@@ -5573,19 +5573,19 @@ packages:
       ignore: 5.3.1
     dev: true
 
-  /eslint-plugin-format@0.1.0(eslint@8.57.0):
-    resolution: {integrity: sha512-IgOu+GEH+PdKnpuPrFzY8q8QgnzAUijDZsNLhpp5jx0Lbu9u968/STcmEZGnIMVBw3zeTNN/FsU6d2Rdgcy6Aw==}
+  /eslint-plugin-format@0.1.1(eslint@8.57.0):
+    resolution: {integrity: sha512-jzk70D3RbaseNIdMtimMqiJHDPUw9bzZjmZTT9tQ6x3HU9U9bGqnsieQK5H0FIZUpx4qC41CidLDWwVCylICRQ==}
     peerDependencies:
-      eslint: ^8.40.0
+      eslint: ^8.40.0 || ^9.0.0
     dependencies:
       '@dprint/formatter': 0.2.1
       '@dprint/markdown': 0.16.4
-      '@dprint/toml': 0.5.4
+      '@dprint/toml': 0.6.1
       eslint: 8.57.0
       eslint-formatting-reporter: 0.0.0(eslint@8.57.0)
       eslint-parser-plain: 0.1.0
       prettier: 3.2.5
-      synckit: 0.8.8
+      synckit: 0.9.0
     dev: true
 
   /eslint-plugin-import-x@0.5.0(eslint@8.57.0)(typescript@5.4.5):
@@ -9685,14 +9685,6 @@ packages:
       tslib: 2.6.2
     dev: true
 
-  /synckit@0.8.8:
-    resolution: {integrity: sha512-HwOKAP7Wc5aRGYdKH+dw0PRRpbO841v2DENBtjnR5HFWoiNByAl7vrx3p0G/rCyYXQsrxqtX48TImFtPcIHSpQ==}
-    engines: {node: ^14.18.0 || >=16.0.0}
-    dependencies:
-      '@pkgr/core': 0.1.1
-      tslib: 2.6.2
-    dev: true
-
   /synckit@0.9.0:
     resolution: {integrity: sha512-7RnqIMq572L8PeEzKeBINYEJDDxpcH8JEgLwUqBd3TkofhFRbkq4QLR0u+36avGAhCRbk2nnmjcW9SE531hPDg==}
     engines: {node: ^14.18.0 || >=16.0.0}
@@ -10339,7 +10331,7 @@ packages:
       - rollup
     dev: true
 
-  /unplugin-vue-router@0.7.0(rollup@4.14.3)(vue-router@4.3.0)(vue@3.4.23):
+  /unplugin-vue-router@0.7.0(rollup@4.14.3)(vue-router@4.3.1)(vue@3.4.23):
     resolution: {integrity: sha512-ddRreGq0t5vlSB7OMy4e4cfU1w2AwBQCwmvW3oP/0IHQiokzbx4hd3TpwBu3eIAFVuhX2cwNQwp1U32UybTVCw==}
     peerDependencies:
       vue-router: ^4.1.0
@@ -10359,7 +10351,7 @@ packages:
       pathe: 1.1.2
       scule: 1.3.0
       unplugin: 1.10.1
-      vue-router: 4.3.0(vue@3.4.23)
+      vue-router: 4.3.1(vue@3.4.23)
       yaml: 2.4.1
     transitivePeerDependencies:
       - rollup
@@ -10572,7 +10564,7 @@ packages:
       - supports-color
     dev: true
 
-  /vite-plugin-vue-layouts@0.10.0(vite@5.2.9)(vue-router@4.3.0)(vue@3.4.23):
+  /vite-plugin-vue-layouts@0.10.0(vite@5.2.9)(vue-router@4.3.1)(vue@3.4.23):
     resolution: {integrity: sha512-95hG4rm3EZq1w56b+rlAC+9AxIeytaOFeBS2KDIa2ZJHyDxiWaqf/v93uLCuqkP7ye6W78B/0b7Xo4/y7mocgQ==}
     peerDependencies:
       vite: ^4.0.0 || ^5.0.0
@@ -10583,7 +10575,7 @@ packages:
       fast-glob: 3.3.2
       vite: 5.2.9
       vue: 3.4.23(typescript@5.4.5)
-      vue-router: 4.3.0(vue@3.4.23)
+      vue-router: 4.3.1(vue@3.4.23)
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -10606,7 +10598,7 @@ packages:
     resolution: {integrity: sha512-SMVDf17kwexkN/oSSDYo4rOGvRwmWQeiFQ16Ilvxx9hfm9ojWEVQ1BBZG90cI/XhDiJJTCBtLvB4YpoHz91Glg==}
     dev: true
 
-  /vite-ssg@0.23.6(critters@0.0.20)(vite@5.2.9)(vue-router@4.3.0)(vue@3.4.23):
+  /vite-ssg@0.23.6(critters@0.0.20)(vite@5.2.9)(vue-router@4.3.1)(vue@3.4.23):
     resolution: {integrity: sha512-wRMc492AjBYyXNaNMlxcNkOWidxdNRLFnKe2YT1fQd28AD4Ak1GvS6b7hQLMyekYHb7i9+7AvJH6ieGGKgZmTQ==}
     engines: {node: '>=14.0.0'}
     hasBin: true
@@ -10632,7 +10624,7 @@ packages:
       prettier: 3.2.5
       vite: 5.2.9
       vue: 3.4.23(typescript@5.4.5)
-      vue-router: 4.3.0(vue@3.4.23)
+      vue-router: 4.3.1(vue@3.4.23)
       yargs: 17.7.2
     transitivePeerDependencies:
       - bufferutil
@@ -10786,18 +10778,18 @@ packages:
       '@vue/devtools-api': 6.6.1
       vue: 3.4.23(typescript@5.4.5)
 
-  /vue-router-better-scroller@0.0.0(vue-router@4.3.0)(vue@3.4.23):
+  /vue-router-better-scroller@0.0.0(vue-router@4.3.1)(vue@3.4.23):
     resolution: {integrity: sha512-E+ovMBUOgr0TU6rYnc5X8h7rlu+QUkK2AMBXt2S6yMrAlW86cq6k5OExM4WnL4vfHbmJEtf+SbAtZ3H3bxYoBQ==}
     peerDependencies:
       vue: ^3.3.4
       vue-router: ^4.2.2
     dependencies:
       vue: 3.4.23(typescript@5.4.5)
-      vue-router: 4.3.0(vue@3.4.23)
+      vue-router: 4.3.1(vue@3.4.23)
     dev: true
 
-  /vue-router@4.3.0(vue@3.4.23):
-    resolution: {integrity: sha512-dqUcs8tUeG+ssgWhcPbjHvazML16Oga5w34uCUmsk7i0BcnskoLGwjpa15fqMr2Fa5JgVBrdL2MEgqz6XZ/6IQ==}
+  /vue-router@4.3.1(vue@3.4.23):
+    resolution: {integrity: sha512-D0h3oyP6vp28BOvxv2hVpiqFTjTJizCf1BuMmCibc8UW0Ll/N80SWqDd/hqPMaZfzW1j+s2s+aTRyBIP9ElzOw==}
     peerDependencies:
       vue: ^3.2.0
     dependencies:
