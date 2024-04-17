@@ -1,4 +1,4 @@
-import { appDescription, appName } from '../constants/index'
+import { appDescription, appName } from '.'
 
 const scope = '/'
 

@@ -1,3 +1,6 @@
+export const appName = 'Arvin'
+export const appDescription = 'Arvin Web App'
+
 export const SITE = {
   title: '博客',
   author: 'Arvin',
