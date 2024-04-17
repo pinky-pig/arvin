@@ -1,5 +1,5 @@
 <script setup lang="ts">
-
+import { SITE } from '~/config/param'
 </script>
 
 <template>
@@ -11,7 +11,10 @@
       </svg>
     </div>
 
-    <a class="detail-arrow" href="https://hail-manatee-fc5.notion.site/a3d8b723782e48a3b3570980e83c70ae?v=0c510fa996e2492b943e7746c1bd9974" target="_blank">
+    <a
+      class="detail-arrow"
+      :href="SITE.notion" target="_blank"
+    >
       <div class="h-16px w-16px" i-carbon-arrow-up-right />
     </a>
   </ShadowCard>

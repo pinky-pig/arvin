@@ -1,66 +1,75 @@
 import { markRaw } from 'vue'
-import BentoProfile from '~/components/Bento/Profile.vue'
-import BentoWeekly from '~/components/Bento/Weekly.vue'
-import BentoMapbox from '~/components/Bento/Mapbox.vue'
-import BentoCountDown from '~/components/Bento/CountDown.vue'
-import BentoDark from '~/components/Bento/Dark.vue'
-
-// import BentoNotion from '~/components/Bento/Notion.vue'
-
-// import BentoRain from '~/components/Bento/Rain.vue'
-// import BentoPreview from '~/components/Bento/Preview.vue'
-import MouseTail from '~/components/Bento/MouseTail.vue'
-import DragMotion from '~/components/Bento/DragMotion.vue'
-import Superellipse from '~/components/Bento/Superellipse.vue'
-import StrokeText from '~/components/Bento/StrokeText.vue'
-
-// import P5Bg from '~/components/Bento/P5Bg.vue'
-import Cover from '~/components/Bento/Cover/index.vue'
-import Sticker8 from '~/components/Bento/Sticker8.vue'
-import PlaneView from '~/components/Bento/PlaneView.vue'
-import SwitchImage from '~/components/Bento/SwitchImage.vue'
-
-// import GitHubSticker from '~/components/Bento/GitHubSticker.vue'
+/**
+ * 这里代码区分了移动端可桌面端，还有 Bento 的通用组件和自定义组件，酌情配置吧。
+ */
+const commonComponents = await getCommonComponents()
+const customComponents = await getCustomComponents()
 
 export const bentoCellsInDesktop = [
-  { id: '1', x: 0, y: 0, width: 2, height: 2, index: 0, component: markRaw(BentoProfile) },
-  { id: '2', x: 2, y: 0, width: 2, height: 1, index: 0, component: markRaw(BentoWeekly) },
-  { id: '3', x: 0, y: 1, width: 2, height: 1, index: 0, component: markRaw(BentoMapbox) },
-  { id: '4', x: 3, y: 1, width: 1, height: 1, index: 0, component: markRaw(BentoDark) },
-  { id: '5', x: 3, y: 2, width: 2, height: 1, index: 0, component: markRaw(BentoCountDown) },
-  // { id: '6', x: 0, y: 3, width: 1, height: 1, index: 0, component: markRaw(BentoNotion) },
-  // { id: '7', x: 0, y: 4, width: 1, height: 1, index: 0, component: markRaw(BentoRain) },
-  // { id: '8', x: 1, y: 4, width: 1, height: 1, index: 0, component: markRaw(BentoPreview) },
-  { id: '9', x: 2, y: 4, width: 1, height: 1, index: 0, component: markRaw(MouseTail) },
-  { id: '10', x: 3, y: 4, width: 1, height: 1, index: 0, component: markRaw(DragMotion) },
-  { id: '11', x: 4, y: 4, width: 1, height: 1, index: 0, component: markRaw(Superellipse) },
-  { id: '12', x: 5, y: 4, width: 1, height: 1, index: 0, component: markRaw(StrokeText) },
-  // { id: '13', x: 1, y: 5, width: 2, height: 1, index: 0, component: markRaw(GitHubSticker) },
-  // { id: '14', x: 6, y: 3, width: 1, height: 1, index: 0, component: markRaw(P5Bg) },
-  { id: '15', x: 6, y: 4, width: 1, height: 2, index: 0, component: markRaw(Cover) },
-  { id: '16', x: 6, y: 5, width: 1, height: 1, index: 0, component: markRaw(Sticker8) },
-  { id: '17', x: 1, y: 6, width: 1, height: 2, index: 0, component: markRaw(PlaneView) },
-  { id: '18', x: 3, y: 6, width: 2, height: 1, index: 0, component: markRaw(SwitchImage) },
+  ...commonComponents,
+  ...customComponents,
 ]
 
-export const bentoCellsInMobile = [
-  { id: '1', x: 0, y: 0, width: 2, height: 2, index: 0, component: markRaw(BentoProfile) },
-  { id: '2', x: 0, y: 2, width: 2, height: 1, index: 0, component: markRaw(BentoWeekly) },
-  { id: '3', x: 0, y: 3, width: 2, height: 1, index: 0, component: markRaw(BentoMapbox) },
-  { id: '4', x: 0, y: 4, width: 2, height: 1, index: 0, component: markRaw(BentoCountDown) },
-  { id: '5', x: 0, y: 5, width: 1, height: 1, index: 0, component: markRaw(BentoDark) },
-  // { id: '6', x: 1, y: 5, width: 1, height: 1, index: 0, component: markRaw(BentoNotion) },
-  // { id: '7', x: 1, y: 4, width: 1, height: 1, index: 0, component: markRaw(BentoRain) },
-  // { id: '8', x: 1, y: 4, width: 1, height: 1, index: 0, component: markRaw(BentoPreview) },
-  { id: '9', x: 2, y: 4, width: 1, height: 1, index: 0, component: markRaw(MouseTail) },
-  { id: '10', x: 0, y: 6, width: 1, height: 1, index: 0, component: markRaw(DragMotion) },
-  { id: '11', x: 1, y: 6, width: 1, height: 1, index: 0, component: markRaw(Superellipse) },
-  { id: '12', x: 2, y: 6, width: 1, height: 1, index: 0, component: markRaw(StrokeText) },
-  // { id: '13', x: 1, y: 7, width: 2, height: 1, index: 0, component: markRaw(GitHubSticker) },
-  // { id: '14', x: 1, y: 7, width: 1, height: 1, index: 0, component: markRaw(P5Bg) },
-  { id: '15', x: 1, y: 8, width: 1, height: 2, index: 0, component: markRaw(Cover) },
-  { id: '16', x: 1, y: 8, width: 1, height: 1, index: 0, component: markRaw(Sticker8) },
-  { id: '17', x: 1, y: 9, width: 1, height: 2, index: 0, component: markRaw(PlaneView) },
-  { id: '18', x: 2, y: 10, width: 1, height: 1, index: 0, component: markRaw(SwitchImage) },
+export const bentoCellsInMobile = bentoCellsInDesktop
 
-]
+/**
+ * 获取所有 Bento 通用首页组件的配置。
+ * @returns 配置
+ */
+async function getCommonComponents() {
+  const commons = await Promise.all(
+    Object.entries(
+      import.meta.glob('~/components/Bento/Common/*.vue'),
+    )
+      .map(async ([path, resolver]) => {
+        const componentName = (path.split('/') as any).pop().split('.')[0]
+        const component = markRaw((await resolver() as any).default)
+        return [componentName, component]
+      })
+    ,
+  )
+
+  const commonsMap = new Map(commons.map(item => [item[0], item[1]]))
+
+  const commonConfig = [
+    { id: 'Profile', x: 0, y: 0, width: 2, height: 2, index: 0, component: commonsMap.get('Profile') },
+    { id: 'Weekly', x: 2, y: 0, width: 2, height: 1, index: 0, component: commonsMap.get('Weekly') },
+    { id: 'Mapbox', x: 0, y: 1, width: 2, height: 1, index: 0, component: commonsMap.get('Mapbox') },
+    { id: 'Dark', x: 3, y: 1, width: 1, height: 1, index: 0, component: commonsMap.get('Dark') },
+    { id: 'CountDown', x: 3, y: 1, width: 2, height: 1, index: 0, component: commonsMap.get('CountDown') },
+    { id: 'Twitter', x: 4, y: 1, width: 1, height: 1, index: 0, component: commonsMap.get('Twitter') },
+    { id: 'PlaneView', x: 0, y: 2, width: 1, height: 2, index: 0, component: commonsMap.get('PlaneView') },
+    { id: 'DragMotion', x: 3, y: 2, width: 1, height: 1, index: 0, component: commonsMap.get('DragMotion') },
+    { id: 'Notion', x: 3, y: 2, width: 1, height: 1, index: 0, component: commonsMap.get('Notion') },
+  ]
+
+  return commonConfig
+}
+/**
+ * 获取所有 Bento 自定义组件的配置。
+ * @returns 配置
+ */
+async function getCustomComponents() {
+  const custom = await Promise.all(
+    Object.entries(
+      import.meta.glob('~/components/Bento/Custom/*.vue'),
+    )
+      .map(async ([path, resolver]) => {
+        const componentName = (path.split('/') as any).pop().split('.')[0]
+        const component = markRaw((await resolver() as any).default)
+        return [componentName, component]
+      })
+    ,
+  )
+
+  const customMap = new Map(custom.map(item => [item[0], item[1]]))
+
+  const customConfig = [
+    { id: 'StrokeText', x: 2, y: 2, width: 1, height: 1, index: 0, component: customMap.get('StrokeText') },
+    // { id: 'SwitchImage', x: 2, y: 3, width: 2, height: 1, index: 0, component: customMap.get('SwitchImage') },
+    { id: 'Sticker8', x: 3, y: 3, width: 1, height: 1, index: 0, component: customMap.get('Sticker8') },
+    { id: 'Cover', x: 0, y: 2, width: 1, height: 2, index: 0, component: customMap.get('Cover') },
+  ]
+
+  return customConfig
+}

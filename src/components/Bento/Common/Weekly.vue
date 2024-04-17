@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { SITE } from '~/config/param'
 </script>
 
 <template>
@@ -16,7 +17,7 @@
       alt=""
     >
 
-    <a class="detail-arrow" href="https://weekly.mmeme.me/" target="_blank">
+    <a class="detail-arrow" :href="SITE.weeklyUrl" target="_blank">
       <div class="h-16px w-16px" i-carbon-arrow-up-right />
     </a>
   </div>

@@ -2,6 +2,7 @@
 import type { LngLatLike } from 'mapbox-gl'
 import mapboxgl from 'mapbox-gl'
 import MapsMapboxMap from '~/components/Maps/MapboxMap.vue'
+import { SITE } from '~/config/param'
 
 const router = useRouter()
 function toMapbox() {
@@ -18,7 +19,7 @@ function marsOnloaded(map: mapboxgl.Map) {
     const el = document.createElement('div')
     el.innerHTML = `<logo-marker name="${'/logo.svg'}" />`
     new mapboxgl.Marker(el)
-      .setLngLat([118.888175, 32.048268] as LngLatLike)
+      .setLngLat(SITE.coordinate as LngLatLike)
       .addTo(map!)
   })
 }
