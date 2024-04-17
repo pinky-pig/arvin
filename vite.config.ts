@@ -36,6 +36,9 @@ export default defineConfig({
       '~/': `${path.resolve(__dirname, 'src')}/`,
     },
   },
+  build: {
+    target: 'esnext', // browsers can handle the latest ES features
+  },
 
   plugins: [
 
@@ -231,12 +234,6 @@ export default defineConfig({
     // https://github.com/feat-agency/vite-plugin-webfont-dl
     WebfontDownload(),
   ],
-
-  // https://github.com/vitest-dev/vitest
-  test: {
-    include: ['test/**/*.test.ts'],
-    environment: 'jsdom',
-  },
 
   // https://github.com/antfu/vite-ssg
   ssgOptions: {

@@ -43,7 +43,7 @@ dependencies:
     version: 2.1.0
   v3-bento:
     specifier: latest
-    version: 0.0.2-alpha.6.14
+    version: 0.0.2-alpha.6.16
   vue:
     specifier: ^3.4.15
     version: 3.4.23(typescript@5.4.5)
@@ -2051,7 +2051,7 @@ packages:
       escodegen: 2.1.0
       estree-walker: 2.0.2
       jsonc-eslint-parser: 2.4.0
-      magic-string: 0.30.9
+      magic-string: 0.30.10
       mlly: 1.6.1
       source-map-js: 1.2.0
       vue-i18n: 9.12.1(vue@3.4.23)
@@ -3100,7 +3100,7 @@ packages:
       colorette: 2.0.20
       consola: 3.2.3
       fast-glob: 3.3.2
-      magic-string: 0.30.9
+      magic-string: 0.30.10
       pathe: 1.1.2
       perfect-debounce: 1.0.0
     transitivePeerDependencies:
@@ -3137,7 +3137,7 @@ packages:
       '@typescript-eslint/utils': 7.7.0(eslint@8.57.0)(typescript@5.4.5)
       '@unocss/config': 0.58.9
       '@unocss/core': 0.58.9
-      magic-string: 0.30.9
+      magic-string: 0.30.10
       synckit: 0.9.0
     transitivePeerDependencies:
       - eslint
@@ -3171,7 +3171,7 @@ packages:
       '@unocss/rule-utils': 0.58.9
       css-tree: 2.3.1
       fast-glob: 3.3.2
-      magic-string: 0.30.9
+      magic-string: 0.30.10
       postcss: 8.4.38
     dev: true
 
@@ -3244,7 +3244,7 @@ packages:
     engines: {node: '>=14'}
     dependencies:
       '@unocss/core': 0.58.9
-      magic-string: 0.30.9
+      magic-string: 0.30.10
     dev: true
 
   /@unocss/scope@0.58.9:
@@ -3302,7 +3302,7 @@ packages:
       '@unocss/transformer-directives': 0.58.9
       chokidar: 3.6.0
       fast-glob: 3.3.2
-      magic-string: 0.30.9
+      magic-string: 0.30.10
       vite: 5.2.9
     transitivePeerDependencies:
       - rollup
@@ -3338,7 +3338,7 @@ packages:
   /@vitest/snapshot@1.5.0:
     resolution: {integrity: sha512-qpv3fSEuNrhAO3FpH6YYRdaECnnRjg9VxbhdtPwPRnzSfHVXnNzzrpX4cJxqiwgRMo7uRMWDFBlsBq4Cr+rO3A==}
     dependencies:
-      magic-string: 0.30.9
+      magic-string: 0.30.10
       pathe: 1.1.2
       pretty-format: 29.7.0
     dev: true
@@ -3644,7 +3644,7 @@ packages:
       '@vue-macros/common': 1.10.2(rollup@4.14.3)(vue@3.4.23)
       '@vue/compiler-core': 3.4.23
       '@vue/shared': 3.4.23
-      magic-string: 0.30.9
+      magic-string: 0.30.10
       unplugin: 1.10.1
       vue: 3.4.23(typescript@5.4.5)
     transitivePeerDependencies:
@@ -3766,7 +3766,7 @@ packages:
       '@vue/compiler-ssr': 3.4.23
       '@vue/shared': 3.4.23
       estree-walker: 2.0.2
-      magic-string: 0.30.9
+      magic-string: 0.30.10
       postcss: 8.4.38
       source-map-js: 1.2.0
 
@@ -7670,7 +7670,7 @@ packages:
     resolution: {integrity: sha512-0shqecEPgdFpnI3AP90epXyxZy9g6CRZ+SZ7BcqFwYmtFEnZ1jpevcV5HoyVnlDS9gCnc1UIg3Rsvp3Ci7r8OA==}
     engines: {node: '>=16.14.0'}
     dependencies:
-      magic-string: 0.30.9
+      magic-string: 0.30.10
     dev: true
 
   /magic-string@0.25.9:
@@ -7679,9 +7679,8 @@ packages:
       sourcemap-codec: 1.4.8
     dev: true
 
-  /magic-string@0.30.9:
-    resolution: {integrity: sha512-S1+hd+dIrC8EZqKyT9DstTH/0Z+f76kmmvZnkfQVmOpDEF9iVgdYif3Q/pIWHmCoo59bQVGW0kVL3e2nl+9+Sw==}
-    engines: {node: '>=12'}
+  /magic-string@0.30.10:
+    resolution: {integrity: sha512-iIRwTIf0QKV3UAnYK4PU8uiEc4SRh5jX0mwpIwETPpHdhVM4f53RSwS/vXvN1JhGX+Cs7B8qIq3d6AH49O5fAQ==}
     dependencies:
       '@jridgewell/sourcemap-codec': 1.4.15
 
@@ -10048,7 +10047,7 @@ packages:
     dependencies:
       acorn: 8.11.3
       estree-walker: 3.0.3
-      magic-string: 0.30.9
+      magic-string: 0.30.10
       unplugin: 1.10.1
     dev: true
     optional: true
@@ -10102,7 +10101,7 @@ packages:
       estree-walker: 3.0.3
       fast-glob: 3.3.2
       local-pkg: 0.5.0
-      magic-string: 0.30.9
+      magic-string: 0.30.10
       mlly: 1.6.1
       pathe: 1.1.2
       pkg-types: 1.0.3
@@ -10197,7 +10196,7 @@ packages:
       '@vueuse/core': 10.9.0(vue@3.4.23)
       fast-glob: 3.3.2
       local-pkg: 0.5.0
-      magic-string: 0.30.9
+      magic-string: 0.30.10
       minimatch: 9.0.4
       unimport: 3.7.1(rollup@4.14.3)
       unplugin: 1.10.1
@@ -10248,7 +10247,7 @@ packages:
       debug: 4.3.4(supports-color@8.1.1)
       fast-glob: 3.3.2
       local-pkg: 0.4.3
-      magic-string: 0.30.9
+      magic-string: 0.30.10
       minimatch: 9.0.4
       resolve: 1.22.8
       unplugin: 1.10.1
@@ -10437,8 +10436,8 @@ packages:
     hasBin: true
     dev: true
 
-  /v3-bento@0.0.2-alpha.6.14:
-    resolution: {integrity: sha512-DNiW0poSB9/3Q3bTIV8B0xEsddg8RnKtm9vDBhrBGZ5aPZ+pSUQHZn5riGSkxUiXy+d4+LDLezIMR1/UQLzmzQ==}
+  /v3-bento@0.0.2-alpha.6.16:
+    resolution: {integrity: sha512-xvyf2hPW54J6VYihGzWHqKH3z7vZ0NhI/Xok4NIsa6W3kCpHs2jAJBUkkBQw2ltJ50uGRQzwpUWEEKWgu+/e0w==}
     dev: false
 
   /validate-npm-package-license@3.0.4:
@@ -10703,7 +10702,7 @@ packages:
       debug: 4.3.4(supports-color@8.1.1)
       execa: 8.0.1
       local-pkg: 0.5.0
-      magic-string: 0.30.9
+      magic-string: 0.30.10
       pathe: 1.1.2
       picocolors: 1.0.0
       std-env: 3.7.0

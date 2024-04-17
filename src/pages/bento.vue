@@ -1,20 +1,4 @@
-<!-- eslint-disable import/first -->
-<!-- eslint -->
 <script lang="ts">
-import { markRaw } from 'vue'
-/**
- * 这里代码区分了移动端可桌面端，还有 Bento 的通用组件和自定义组件，酌情配置吧。
- */
-const commonComponents = await getCommonComponents()
-const customComponents = await getCustomComponents()
-
-export const bentoCellsInDesktop = [
-  ...commonComponents,
-  ...customComponents,
-]
-
-export const bentoCellsInMobile = bentoCellsInDesktop
-
 /**
  * 获取所有 Bento 通用首页组件的配置。
  * @returns 配置
@@ -48,6 +32,7 @@ async function getCommonComponents() {
 
   return commonConfig
 }
+
 /**
  * 获取所有 Bento 自定义组件的配置。
  * @returns 配置
@@ -82,9 +67,20 @@ async function getCustomComponents() {
 // eslint-disable-next-line import/first
 import { Bento } from 'v3-bento'
 
+const commonComponents = await getCommonComponents()
+const customComponents = await getCustomComponents()
+
+const bentoCellsInDesktop = [
+  ...commonComponents,
+  ...customComponents,
+]
+
+const bentoCellsInMobile = bentoCellsInDesktop
+
 function print(_val: string, _e: any) {
   // console.log(val, e)
 }
+
 const maximumCells = ref(4)
 const size = ref(180)
 const gap = ref(10)
