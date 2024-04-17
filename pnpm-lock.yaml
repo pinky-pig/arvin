@@ -43,7 +43,7 @@ dependencies:
     version: 2.1.0
   v3-bento:
     specifier: latest
-    version: 0.0.2-alpha.6.9
+    version: 0.0.2-alpha.6.14
   vue:
     specifier: ^3.4.15
     version: 3.4.23(typescript@5.4.5)
@@ -1537,7 +1537,7 @@ packages:
       babel-plugin-polyfill-corejs2: 0.4.10(@babel/core@7.24.4)
       babel-plugin-polyfill-corejs3: 0.10.4(@babel/core@7.24.4)
       babel-plugin-polyfill-regenerator: 0.6.1(@babel/core@7.24.4)
-      core-js-compat: 3.36.1
+      core-js-compat: 3.37.0
       semver: 6.3.1
     transitivePeerDependencies:
       - supports-color
@@ -4196,7 +4196,7 @@ packages:
     dependencies:
       '@babel/core': 7.24.4
       '@babel/helper-define-polyfill-provider': 0.6.1(@babel/core@7.24.4)
-      core-js-compat: 3.36.1
+      core-js-compat: 3.37.0
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -4333,7 +4333,7 @@ packages:
     hasBin: true
     dependencies:
       caniuse-lite: 1.0.30001610
-      electron-to-chromium: 1.4.737
+      electron-to-chromium: 1.4.738
       node-releases: 2.0.14
       update-browserslist-db: 1.0.13(browserslist@4.23.0)
     dev: true
@@ -4767,8 +4767,8 @@ packages:
     engines: {node: '>= 0.6'}
     dev: true
 
-  /core-js-compat@3.36.1:
-    resolution: {integrity: sha512-Dk997v9ZCt3X/npqzyGdTlq6t7lDBhZwGvV94PKzDArjp7BTRm7WlDAXYd/OWdeFHO8OChQYRJNJvUCqCbrtKA==}
+  /core-js-compat@3.37.0:
+    resolution: {integrity: sha512-vYq4L+T8aS5UuFg4UwDhc7YNRWVeVZwltad9C/jV3R2LgVOpS9BDr7l/WL6BN0dbV3k1XejPTHqqEzJgsa0frA==}
     dependencies:
       browserslist: 4.23.0
     dev: true
@@ -5246,8 +5246,8 @@ packages:
       jake: 10.8.7
     dev: true
 
-  /electron-to-chromium@1.4.737:
-    resolution: {integrity: sha512-QvLTxaLHKdy5YxvixAw/FfHq2eWLUL9KvsPjp0aHK1gI5d3EDuDgITkvj0nFO2c6zUY3ZqVAJQiBYyQP9tQpfw==}
+  /electron-to-chromium@1.4.738:
+    resolution: {integrity: sha512-lwKft2CLFztD+vEIpesrOtCrko/TFnEJlHFdRhazU7Y/jx5qc4cqsocfVrBg4So4gGe9lvxnbLIoev47WMpg+A==}
     dev: true
 
   /emoji-regex@10.3.0:
@@ -5732,7 +5732,7 @@ packages:
       '@eslint/eslintrc': 2.1.4
       ci-info: 4.0.0
       clean-regexp: 1.0.0
-      core-js-compat: 3.36.1
+      core-js-compat: 3.37.0
       eslint: 8.57.0
       esquery: 1.5.0
       indent-string: 4.0.0
@@ -10445,8 +10445,8 @@ packages:
     hasBin: true
     dev: true
 
-  /v3-bento@0.0.2-alpha.6.9:
-    resolution: {integrity: sha512-sSiRdbBlrSNxlz+UQpUiWY9DA+9spWKr1qgmmADd4n6MXzDwBrFYoLZ5iw+6WGyVdWZGfSkUsagbpK+TrCf7Dw==}
+  /v3-bento@0.0.2-alpha.6.14:
+    resolution: {integrity: sha512-DNiW0poSB9/3Q3bTIV8B0xEsddg8RnKtm9vDBhrBGZ5aPZ+pSUQHZn5riGSkxUiXy+d4+LDLezIMR1/UQLzmzQ==}
     dev: false
 
   /validate-npm-package-license@3.0.4:
