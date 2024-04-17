@@ -3,7 +3,7 @@ import CoverContent from './Content.vue'
 </script>
 
 <template>
-  <div class="cover-container relative h-full w-full overflow-hidden bg-[var(--cover-main-color)]">
+  <div class="cover-container rounded-10px relative h-full w-full overflow-hidden bg-[var(--cover-main-color)]">
     <CoverContent class="pointer-events-none absolute left-1/2 top-1/2 h-9/10 w-9/10 -translate-1/2" />
 
     <!-- bg1 -->

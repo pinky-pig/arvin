@@ -21,7 +21,8 @@ const isLargeScreen = useMediaQuery('(min-width: 720px)')
       </Transition>
     </RouterView>
     <client-only>
-      <MouseTailBackground />
+      <!-- 鼠标轨迹暂时移除 -->
+      <!-- <MouseTailBackground /> -->
     </client-only>
     <Footer />
   </main>

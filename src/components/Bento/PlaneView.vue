@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <div class="pointer-events-auto grid h-full w-full place-items-center bg-[#163245]">
+  <div class="pointer-events-auto grid h-full w-full place-items-center rounded-10px bg-[#163245]">
     <AirplaneWindow class="h-300px w-160px">
       <img
         class="h-full w-full object-fill"

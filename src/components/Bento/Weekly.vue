@@ -4,7 +4,7 @@
 <template>
   <div class="relative select-none overflow-hidden rounded-10px bg-[var(--card--bg)]">
     <img
-      class="lozad pointer-events-none h-180px w-370px select-none object-fill"
+      class="lozad pointer-events-none h-full w-full select-none object-fill"
       :style="{ opacity: isDark ? 0 : 1 }"
       src="/wrap-bg.svg"
       alt=""
