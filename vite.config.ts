@@ -120,13 +120,10 @@ export default defineConfig({
     }),
 
     // https://github.com/antfu/unocss
-    // see uno.config.ts for config
     Unocss(),
 
     // https://github.com/unplugin/unplugin-vue-markdown
-    // Don't need this? Try vitesse-lite: https://github.com/antfu/vitesse-lite
     Markdown({
-
       wrapperComponent: id => id.includes('/demo/')
         ? 'WrapperDemo'
         : 'WrapperPost',
@@ -136,10 +133,11 @@ export default defineConfig({
 
       headEnabled: true,
       async markdownItSetup(md) {
+        // https://shiki.style/guide/
         md.use(await MarkdownItShiki({
           themes: {
-            dark: 'vitesse-dark',
-            light: 'vitesse-light',
+            dark: 'github-dark',
+            light: 'catppuccin-latte',
           },
           defaultColor: false,
           cssVariablePrefix: '--s-',

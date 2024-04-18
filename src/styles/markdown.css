@@ -5,13 +5,15 @@
   --twoslash-border-color: #8884;
 }
 .dark .shiki {
-  background-color: #0e0e0e;
+  background: var(--s-dark-bg);
+  border: unset !important;
 }
 
 html:not(.dark) .shiki,
 html:not(.dark) .shiki span {
+  background: var(--s-light-bg);
+  border: 1px solid #f3f3f3;
   color: var(--s-light, inherit);
-  background-color: #fafafa;
   --twoslash-popup-bg: #fafafa;
 }
 
