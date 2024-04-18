@@ -36,7 +36,7 @@ html.dark{
   --blog-card-bg                 : #0D1117;
   --blog-card-text               : #ffffff;
   --blog-card-border             : #30363D;
-  --blog-btn                     : #aaaaaa;
+  --blog-btn                     : #0d1117;
   --blog-btn-shadow              : #aaaaaa90;
 
   --shadow-block-outer-bg               : #30363D;
@@ -118,8 +118,8 @@ html{
   --blog-card-bg                 : #F3F3F3;
   --blog-card-text               : #000000;
   --blog-card-border             : #ffffff;
-  --blog-btn                     : #aaaaaa;
-  --blog-btn-shadow              : #aaaaaa90;
+  --blog-btn                     : #ffffff;
+  --blog-btn-shadow              : #ffffff90;
 
   --shadow-block-outer-bg               : linear-gradient(145deg, #fefefe, #fff);
   --shadow-block-inner-bg               : linear-gradient(to bottom, #EFEFEF, #ffffff);
