@@ -1,7 +1,6 @@
 @import 'mapbox-gl/dist/mapbox-gl.css';
 @import url('./fonts.css');
 @import url('./theme.css');
-@import 'shikiji-twoslash/style-rich.css';
 @import './markdown.css';
 @import './prose.css';
 

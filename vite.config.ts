@@ -20,7 +20,9 @@ import Pages from 'vite-plugin-pages'
 import fs from 'fs-extra'
 import matter from 'gray-matter'
 
-import MarkdownItShikiji from 'markdown-it-shikiji'
+import MarkdownItShiki from '@shikijs/markdown-it'
+import { rendererRich, transformerTwoslash } from '@shikijs/twoslash'
+
 import anchor from 'markdown-it-anchor'
 import GitHubAlerts from 'markdown-it-github-alerts'
 
@@ -134,14 +136,19 @@ export default defineConfig({
 
       headEnabled: true,
       async markdownItSetup(md) {
-        md.use(await MarkdownItShikiji({
+        md.use(await MarkdownItShiki({
           themes: {
             dark: 'vitesse-dark',
             light: 'vitesse-light',
           },
           defaultColor: false,
           cssVariablePrefix: '--s-',
-          transformers: [],
+          transformers: [
+            transformerTwoslash({
+              explicitTrigger: true,
+              renderer: rendererRich(),
+            }),
+          ],
         }))
 
         md.use(anchor, {
