@@ -37,7 +37,7 @@ export function registerGiscus(root: HTMLElement) {
     script.setAttribute('data-input-position', 'bottom')
     script.setAttribute('data-theme', getCommentTheme(isDark.value ? 'dark' : 'light'))
     script.setAttribute('data-lang', 'zh-CN')
-    script.setAttribute('data-loading', 'lazy')
+    // script.setAttribute('data-loading', 'lazy')
     script.setAttribute('crossorigin', 'anonymous')
     script.setAttribute('async', '')
     root.appendChild(script)
