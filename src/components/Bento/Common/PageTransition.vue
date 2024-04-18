@@ -25,7 +25,7 @@ function handleChange(e: CurrentTransitionNameType) {
             <input :checked="currentTransitionName === 'page'" value="page" name="band" type="radio" class="input" @change="handleChange('page')">
           </label>
           <label class="label">
-            <input :checked="currentTransitionName === 'null'" value="sw" name="band" type="radio" class="input" @change="handleChange('null')">
+            <input :checked="currentTransitionName === 'fade'" value="sw" name="band" type="radio" class="input" @change="handleChange('fade')">
           </label>
           <label class="label">
             <input :checked="currentTransitionName === 'translateY'" value="translateY" name="band" type="radio" class="input" @change="handleChange('translateY')">

@@ -4,7 +4,6 @@
 @import './markdown.css';
 @import './prose.css';
 
-
 /* https://etceteratype.co/gluten 字体 */
 /* @import url('https://fonts.googleapis.com/css2?family=Gluten:wght@100;200;300;400;500;600;700;800;900&display=swap'); */
 /* https://fonts.google.com/specimen/Grandstander 字体 */
@@ -131,7 +130,7 @@ a.mapboxgl-ctrl-logo{
   display:none !important;
 }
 
-/* 跳转过渡 */
+/* 跳转过渡1 */
 .translateY-enter-active {
   transition: all 0.1s ease-out;
 }
@@ -144,8 +143,18 @@ a.mapboxgl-ctrl-logo{
   opacity: 0;
 }
 
+/* 跳转过渡2 */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.2s ease;
+}
 
-/* layout 跳转过度 */
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+/* 跳转过渡3 */
 .page-enter-active,.page-leave-active {
 	transition: all .4s
 }
@@ -175,16 +184,7 @@ a.mapboxgl-ctrl-logo{
   z-index: 1;
 }
 
-/* Transitions */
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.2s ease;
-}
 
-.fade-enter-from,
-.fade-leave-to {
-  opacity: 0;
-}
 
 /* nprogress */
 #nprogress {

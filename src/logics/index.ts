@@ -1,4 +1,4 @@
-export type CurrentTransitionNameType = 'page' | 'translateY' | 'null'
+export type CurrentTransitionNameType = 'page' | 'translateY' | 'fade'
 
 export const currentBlogTag = useStorage('currentBlogTag', '')
 
