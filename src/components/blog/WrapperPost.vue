@@ -77,6 +77,10 @@ watchOnce(giscusRoot, (root) => {
   if (root && root instanceof HTMLElement)
     registerGiscus(root)
 })
+onActivated(() => {
+  if (giscusRoot.value && giscusRoot.value instanceof HTMLElement)
+    registerGiscus(giscusRoot.value)
+})
 </script>
 
 <template>
