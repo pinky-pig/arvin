@@ -28,6 +28,7 @@ async function getCommonComponents() {
     { id: 'PlaneView', x: 0, y: 2, width: 1, height: 2, index: 0, component: commonsMap.get('PlaneView') },
     { id: 'DragMotion', x: 3, y: 2, width: 1, height: 1, index: 0, component: commonsMap.get('DragMotion') },
     { id: 'Notion', x: 3, y: 2, width: 1, height: 1, index: 0, component: commonsMap.get('Notion') },
+    { id: 'PageTransition', x: 4, y: 2, width: 1, height: 1, index: 0, component: commonsMap.get('PageTransition') },
   ]
 
   return commonConfig

@@ -132,17 +132,17 @@ a.mapboxgl-ctrl-logo{
 }
 
 /* 跳转过渡 */
-/* .page-enter-active {
+.translateY-enter-active {
   transition: all 0.1s ease-out;
 }
-.page-leave-active {
+.translateY-leave-active {
   transition: all 0.3s cubic-bezier(1, 0.5, 0.8, 1);
 }
-.page-enter-from,
-.page-leave-to {
+.translateY-enter-from,
+.translateY-leave-to {
   transform: translateY(20px);
   opacity: 0;
-} */
+}
 
 
 /* layout 跳转过度 */
@@ -175,7 +175,18 @@ a.mapboxgl-ctrl-logo{
   z-index: 1;
 }
 
+/* Transitions */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.2s ease;
+}
 
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+/* nprogress */
 #nprogress {
   pointer-events: none;
 }
