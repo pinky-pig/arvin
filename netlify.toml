@@ -6,12 +6,12 @@ command = "pnpm run build"
 NODE_VERSION = "20"
 
 [[redirects]]
-from = "/*"
-to = "/index.html"
-status = 200
-
+  from = "/styles"
+  to = "https://giscus.app"
+  status = 200
+  force = true
+  headers = {X-From = "Netlify"}
 [[headers]]
-for = "/manifest.webmanifest"
-
-[headers.values]
-Content-Type = "application/manifest+json"
+  for = "/*"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"

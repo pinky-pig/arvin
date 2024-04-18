@@ -39,31 +39,16 @@ export const createApp = ViteSSG(
 
     const { router, isClient } = ctx
     if (isClient) {
-      const html = document.querySelector('html')!
-      setupRouterScroller(router, {
-        selectors: {
-          html(ctx) {
-            // only do the sliding transition when the scroll position is not 0
-            if (ctx.savedPosition?.top)
-              html.classList.add('no-sliding')
-            else
-              html.classList.remove('no-sliding')
-            return true
-          },
-        },
-        behavior: 'auto',
-      })
-
       router.beforeEach((val) => {
-        // 如果路由是中文，刷新之后，路由会被转码，导致匹配不到路由
         const decodePath = decodeURIComponent(val.path)
-        if (hasChinese(decodePath) && decodePath !== val.path)
-          router.replace(decodePath)
 
-        // 因为页面是共用一个 layout ，所以这里设置一下。页面切花动画是 .4s ， 这里延迟设置为 0.4
-        setTimeout(() => {
-          window.scrollTo(0, 0)
-        }, 400)
+        // 判断是否出现中文，将中文 replace 重新跳转
+        if (hasChinese(decodePath) && decodePath !== val.path) {
+          router.replace(
+            val.fullPath.replace(val.path, decodePath),
+          )
+        }
+
         NProgress.start()
       })
       router.afterEach(() => {

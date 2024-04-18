@@ -27,10 +27,10 @@ export function registerGiscus(root: HTMLElement) {
     const script = document.createElement('script')
     script.src = 'https://giscus.app/client.js'
     script.setAttribute('data-repo', 'pinky-pig/Arvin')
-    script.setAttribute('data-repo-id', 'R_kgDOJI00wg')
+    script.setAttribute('data-repo-id', 'R_kgDOLC_KIQ')
     script.setAttribute('data-category', 'General')
-    script.setAttribute('data-category-id', 'DIC_kwDOJI00ws4CWzuK')
-    script.setAttribute('data-mapping', 'pathname')
+    script.setAttribute('data-category-id', 'DIC_kwDOLC_KIc4CexE9')
+    script.setAttribute('data-mapping', 'og:title')
     script.setAttribute('data-strict', '0')
     script.setAttribute('data-reactions-enabled', '1')
     script.setAttribute('data-emit-metadata', '0')

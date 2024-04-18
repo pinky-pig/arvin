@@ -10,7 +10,9 @@ cover: https://cdn.jsdelivr.net/gh/pinky-pig/pic-bed/imagesPasted%20image%202024
 
 **`plugins`是一个插件，里面自己定义的规则（写法规则）和处理器（处理不同类型的文件）等等。**
 
-> [Eslint 官方中文文档 - 创建插件](https://zh-hans.eslint.org/docs/latest/extend/plugins#%E6%8F%92%E4%BB%B6%E5%91%BD%E5%90%8D) > [古茗前端实现自定义 ESLint 规则文章](https://juejin.cn/post/7202413628807938108) > [GitHub 实现 ESLint 插件文章参考](https://github.com/pfan123/Articles/issues/70)
+> 1. [Eslint 官方中文文档 - 创建插件](https://zh-hans.eslint.org/docs/latest/extend/plugins#%E6%8F%92%E4%BB%B6%E5%91%BD%E5%90%8D)
+> 2. [古茗前端实现自定义 ESLint 规则文章](https://juejin.cn/post/7202413628807938108)
+> 3. [GitHub 实现 ESLint 插件文章参考](https://github.com/pfan123/Articles/issues/70)
 
 下面创建最基础简单的规则作为样例。
 

@@ -1,5 +1,6 @@
 <script setup lang='ts'>
 import { formatDate } from '~/utils/blog'
+import { registerGiscus } from '~/utils/giscus'
 
 const { frontmatter } = defineProps({
   frontmatter: {
@@ -11,9 +12,6 @@ const { frontmatter } = defineProps({
 const router = useRouter()
 const route = useRoute()
 const content = ref<HTMLDivElement>()
-
-const base = 'https://mmeme.me'
-const tweetUrl = computed(() => `https://twitter.com/intent/tweet?text=${encodeURIComponent(`Reading @arvin\'s ${base}${route.path}\n\nI think...`)}`)
 
 onMounted(() => {
   const navigate = () => {
@@ -71,6 +69,13 @@ onMounted(() => {
     if (!navigate())
       setTimeout(navigate, 1000)
   }, 1)
+})
+
+const giscusRoot = ref<HTMLElement | null> (null)
+
+watchOnce(giscusRoot, (root) => {
+  if (root && root instanceof HTMLElement)
+    registerGiscus(root)
 })
 </script>
 
@@ -145,18 +150,17 @@ onMounted(() => {
     <div v-if="route.path !== '/'" class="slide-enter m-auto mb-8 animate-delay-500 prose print:hidden">
       <br>
 
-      <template v-if="frontmatter.duration">
-        <span font-mono op50>> </span>
-        <span op50>comment on </span>
-        <a :href="tweetUrl" target="_blank" op50>twitter</a>
-      </template>
-      <span font-mono op50>> </span>
+      <span font-mono op50> {{ `> ` }}</span>
       <RouterLink
         to="/blog"
         class="font-mono op50 hover:op75"
       >
         {{ 'cd ..' }}
       </RouterLink>
+
+      <div class="py-4" />
+      <!-- comment -->
+      <div ref="giscusRoot" />
     </div>
     <ScrollTopButton />
   </main>

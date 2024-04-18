@@ -54,7 +54,7 @@ useEventListener('click', async (e) => {
     <Transition name="fade">
       <div v-if="imageModel" fixed bottom-0 left-0 right-0 top-0 z-500 backdrop-blur-7 @click="imageModel = undefined">
         <div absolute bottom-0 left-0 right-0 top-0 z--1 bg-black:30 />
-        <img :src="imageModel.src" :alt="imageModel.alt" h-full w-full object-contain>
+        <img class="mx-auto h-full w-[calc(100%_-_20px)] object-contain" :src="imageModel.src" :alt="imageModel.alt">
       </div>
     </Transition>
 
