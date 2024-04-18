@@ -39,6 +39,29 @@ export const createApp = ViteSSG(
 
     const { router, isClient } = ctx
     if (isClient) {
+      // https://github.com/antfu/vue-router-better-scroller
+      const html = document.querySelector('html')!
+      setupRouterScroller(router, {
+        selectors: {
+          html(ctx) {
+            // 页面内容加载动画（暂无设置）
+            if (ctx.savedPosition?.top)
+              html.classList.add('no-sliding')
+            else
+              html.classList.remove('no-sliding')
+            return true
+          },
+          // 解决同一个 layout 路由切换页面没有回到顶部的问题
+          window() {
+            return {
+              top: 0,
+              behavior: 'smooth',
+            }
+          },
+        },
+        behavior: 'auto',
+      })
+
       router.beforeEach((val) => {
         const decodePath = decodeURIComponent(val.path)
 
