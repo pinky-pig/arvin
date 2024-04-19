@@ -111,20 +111,8 @@ export const PROJECTS = [
   },
 ]
 
-export enum UnsplashSetting {
-  ApplicationName = 'what-is-my-new-tab',
-  AccessKey = 'KM1kMtcaYX2SZQR1m_o-pwg4RJZUVivPZgfJsbw5h2o',
-  SecretKey = 'ma572d0k1fKQIBlLm49h9k3A7np9X_ezS1hfu4Upaeo',
-}
-
 export enum MapboxSetting {
   token = 'pk.eyJ1IjoicGlua3ktcGlnIiwiYSI6ImNsZnJvZ2Q1cDAwZ3ozcG56bXFwbjAzZjAifQ.eEOFvRbKqZHQ3OxeqPBsXw',
   mapLightStyle = 'mapbox://styles/pinky-pig/clgc32u1e004g01n2bitvj86a',
   mapDarkStyle = 'mapbox://styles/pinky-pig/clft35kll000o01osk8svnlfg',
-}
-
-// https://console.upstash.com/
-export enum UpstashSetting {
-  UPSTASH_REDIS_REST_URL = 'https://emerging-roughy-42883.upstash.io',
-  UPSTASH_REDIS_REST_TOKEN = 'AaeDASQgODUzYmUyMTgtMTVlZS00NzVlLTliZGQtYWYzN2Y4MjU0N2RkYjI3ZDY1ZWU3Y2JjNDQwM2JjM2M2OTMwZTJjYTFjNDg=',
 }
