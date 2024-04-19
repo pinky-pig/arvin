@@ -7,7 +7,7 @@ settings:
 dependencies:
   '@unhead/vue':
     specifier: ^1.9.6
-    version: 1.9.6(vue@3.4.23)
+    version: 1.9.7(vue@3.4.23)
   '@unocss/reset':
     specifier: ^0.59.4
     version: 0.59.4
@@ -49,7 +49,7 @@ dependencies:
     version: 2.1.0
   v3-bento:
     specifier: latest
-    version: 0.0.2-alpha.6.16
+    version: 0.0.2-alpha.6.19
   vue:
     specifier: ^3.4.23
     version: 3.4.23(typescript@5.4.5)
@@ -3260,39 +3260,39 @@ packages:
       - supports-color
     dev: true
 
-  /@unhead/dom@1.9.6:
-    resolution: {integrity: sha512-M7vb/8JRTShAUxF3xiU7KPOAuLET7owMO7jyqCVvwluhM1WjqjTqCfbO6kfDFn2vjl6Vn0jeuGOkXsq9QOBpBA==}
+  /@unhead/dom@1.9.7:
+    resolution: {integrity: sha512-suZVi8apZCNEMKuasGboBB3njJJm+gd8G0NA89geVozJ0bz40FvLyLEJZ9LirbzpujmhgHhsUSvlq4QyslRqdQ==}
     dependencies:
-      '@unhead/schema': 1.9.6
-      '@unhead/shared': 1.9.6
+      '@unhead/schema': 1.9.7
+      '@unhead/shared': 1.9.7
 
-  /@unhead/schema@1.9.6:
-    resolution: {integrity: sha512-GDC4JB6gv7Vbf3qCDQpypb9aXcZi/XJ48OYEDwY38FLXweW1iK54kD0TafSPu6fI80/t8z4rurOl+LV8iHTnsg==}
+  /@unhead/schema@1.9.7:
+    resolution: {integrity: sha512-naQGY1gQqq8DmQCxVTOeeXIqaRwbqnLEgvQl12zPEDviYxmg7TCbmKyN9uT4ZarQbJ2WYT2UtYvdSrmTXcwlBw==}
     dependencies:
       hookable: 5.5.3
       zhead: 2.2.4
 
-  /@unhead/shared@1.9.6:
-    resolution: {integrity: sha512-DqeSg5X+ITQDzRu4OFXnPHg9JRc02aZWX9nRB/+Ri/g7fXdIEc3qVya0SD+eNo4iC8+ZTCuTAqbwHqdxmhunJw==}
+  /@unhead/shared@1.9.7:
+    resolution: {integrity: sha512-srji+qaBkkGOTdtTmFxt3AebFYcpt1qQHeQva7X3dSm5nZJDoKj35BJJTZfBSRCjgvkTtsdVUT14f9p9/4BCMA==}
     dependencies:
-      '@unhead/schema': 1.9.6
+      '@unhead/schema': 1.9.7
 
-  /@unhead/ssr@1.9.6:
-    resolution: {integrity: sha512-yLy7IvchlqJ29Nshsd9ArWQCXv3qMoe5aK28FJ4G+pgQWH+SdpVaDsWoe0UNYNhzU3TkMOObF6ugiproVUZVkw==}
+  /@unhead/ssr@1.9.7:
+    resolution: {integrity: sha512-3K0J9biCypPzJ5o4AgjhKboX2Sas4COj54wfT+ghSfyQ05Lp5IlWxw0FrXuxKPk54ObovskUwIf8eCa9ke0Vuw==}
     dependencies:
-      '@unhead/schema': 1.9.6
-      '@unhead/shared': 1.9.6
+      '@unhead/schema': 1.9.7
+      '@unhead/shared': 1.9.7
     dev: false
 
-  /@unhead/vue@1.9.6(vue@3.4.23):
-    resolution: {integrity: sha512-wIvNEI7vurVPIj9iD3DKHcoSEuE7sjxDy4dj91/hPyxQVnFEKGuyabwjLMOuzXFgF8Wb8c/KrheTLIO3GtRi2w==}
+  /@unhead/vue@1.9.7(vue@3.4.23):
+    resolution: {integrity: sha512-c5pcNvi3FwMfqd+lfD3XUyRKPDv/AVPrep84CFXaqB7ebb+2OQTgtxBiCoRsa8+DtdhYI50lYJ/yeVdfLI9XUw==}
     peerDependencies:
       vue: '>=2.7 || >=3'
     dependencies:
-      '@unhead/schema': 1.9.6
-      '@unhead/shared': 1.9.6
+      '@unhead/schema': 1.9.7
+      '@unhead/shared': 1.9.7
       hookable: 5.5.3
-      unhead: 1.9.6
+      unhead: 1.9.7
       vue: 3.4.23(typescript@5.4.5)
 
   /@unocss/astro@0.59.4(rollup@4.14.3)(vite@5.2.9):
@@ -4108,10 +4108,10 @@ packages:
     peerDependencies:
       vue: '>=2.7 || >=3'
     dependencies:
-      '@unhead/dom': 1.9.6
-      '@unhead/schema': 1.9.6
-      '@unhead/ssr': 1.9.6
-      '@unhead/vue': 1.9.6(vue@3.4.23)
+      '@unhead/dom': 1.9.7
+      '@unhead/schema': 1.9.7
+      '@unhead/ssr': 1.9.7
+      '@unhead/vue': 1.9.7(vue@3.4.23)
       vue: 3.4.23(typescript@5.4.5)
     dev: false
 
@@ -4962,7 +4962,6 @@ packages:
 
   /confbox@0.1.7:
     resolution: {integrity: sha512-uJcB/FKZtBMCJpK8MQji6bJHgu1tixKPxRLeGkNzBoOZzpnZUJm0jm2/sBDWcuBx1dYgxV4JU+g5hmNxCyAmdA==}
-    requiresBuild: true
     dev: true
 
   /config-chain@1.1.13:
@@ -10363,12 +10362,12 @@ packages:
     resolution: {integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==}
     dev: true
 
-  /unhead@1.9.6:
-    resolution: {integrity: sha512-W4GRkpj1CaQXHPPLJkYqQFrH8DSeJZp7XDmQychM+kiuxXUX6M5eFzCryQhjvj2ka9t6SM60W/BmJ46YOPiN7g==}
+  /unhead@1.9.7:
+    resolution: {integrity: sha512-Kv7aU5l41qiq36t9qMks8Pgsj7adaTBm9aDS6USlmodTXioeqlJ5vEu9DI+8ZZPwRlmof3aDlo1kubyaXdSNmQ==}
     dependencies:
-      '@unhead/dom': 1.9.6
-      '@unhead/schema': 1.9.6
-      '@unhead/shared': 1.9.6
+      '@unhead/dom': 1.9.7
+      '@unhead/schema': 1.9.7
+      '@unhead/shared': 1.9.7
       hookable: 5.5.3
 
   /unicode-canonical-property-names-ecmascript@2.0.0:
@@ -10743,8 +10742,8 @@ packages:
     hasBin: true
     dev: true
 
-  /v3-bento@0.0.2-alpha.6.16:
-    resolution: {integrity: sha512-xvyf2hPW54J6VYihGzWHqKH3z7vZ0NhI/Xok4NIsa6W3kCpHs2jAJBUkkBQw2ltJ50uGRQzwpUWEEKWgu+/e0w==}
+  /v3-bento@0.0.2-alpha.6.19:
+    resolution: {integrity: sha512-UHQxLaR67GurHIY8a1FKXb5466AdO6sqjKx0GNUbkUTxeuPXuU/qfvYU12TwlHay++vdoh+vj/cvBxt/NiInWA==}
     dev: false
 
   /validate-npm-package-license@3.0.4:
@@ -10923,8 +10922,8 @@ packages:
       vue-router:
         optional: true
     dependencies:
-      '@unhead/dom': 1.9.6
-      '@unhead/vue': 1.9.6(vue@3.4.23)
+      '@unhead/dom': 1.9.7
+      '@unhead/vue': 1.9.7(vue@3.4.23)
       critters: 0.0.22
       fs-extra: 11.2.0
       html-minifier: 4.0.0
