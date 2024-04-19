@@ -6,7 +6,7 @@
 async function getCommonComponents() {
   const commons = await Promise.all(
     Object.entries(
-      import.meta.glob('~/components/Bento/Common/*.vue'),
+      import.meta.glob('~/components/bento/common/*.vue'),
     )
       .map(async ([path, resolver]) => {
         const componentName = (path.split('/') as any).pop().split('.')[0]
@@ -41,7 +41,7 @@ async function getCommonComponents() {
 async function getCustomComponents() {
   const custom = await Promise.all(
     Object.entries(
-      import.meta.glob('~/components/Bento/Custom/*.vue'),
+      import.meta.glob('~/components/bento/custom/*.vue'),
     )
       .map(async ([path, resolver]) => {
         const componentName = (path.split('/') as any).pop().split('.')[0]
