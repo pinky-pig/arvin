@@ -1,12 +1,11 @@
 <script setup lang="ts">
 import type { LngLatLike } from 'mapbox-gl'
 import mapboxgl from 'mapbox-gl'
+import MapboxModal from '~/components/bento/modal/MapboxModal.vue'
+
+import ShadowCard from '~/components/ui/ShadowCard.vue'
 import { SITE } from '~/config/param'
 
-const router = useRouter()
-function toMapbox() {
-  router.push('/mapbox')
-}
 const online = useOnline()
 
 let mapInstance: mapboxgl.Map | null = null
@@ -32,9 +31,17 @@ function marsOnloaded(map: mapboxgl.Map) {
 
     <MapboxMap v-else @onload="marsOnloaded" />
 
-    <button class="detail-arrow" @click="toMapbox">
-      <div class="h-16px w-16px" i-carbon-arrow-up-right />
-    </button>
+    <Dialog>
+      <DialogTrigger class="detail-arrow">
+        <div class="h-16px w-16px" i-carbon-arrow-up-right />
+      </DialogTrigger>
+      <DialogContent class="h-fit max-w-unset w-fit p-10px bg-[var(--card--border)]!">
+        <DialogTitle />
+        <DialogDescription />
+
+        <MapboxModal />
+      </DialogContent>
+    </Dialog>
   </ShadowCard>
 </template>
 

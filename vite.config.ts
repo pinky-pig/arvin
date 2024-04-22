@@ -7,7 +7,6 @@ import Layouts from 'vite-plugin-vue-layouts'
 import Components from 'unplugin-vue-components/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import Markdown from 'unplugin-vue-markdown/vite'
-import VueMacros from 'unplugin-vue-macros/vite'
 import VueI18n from '@intlify/unplugin-vue-i18n/vite'
 import { VitePWA } from 'vite-plugin-pwa'
 
@@ -43,6 +42,9 @@ export default defineConfig({
   },
 
   plugins: [
+    Vue({
+      include: [/\.vue$/, /\.md$/],
+    }),
 
     Pages({
       extensions: ['vue', 'md'],
@@ -69,14 +71,6 @@ export default defineConfig({
         }
 
         return route
-      },
-    }),
-
-    VueMacros({
-      plugins: {
-        vue: Vue({
-          include: [/\.vue$/, /\.md$/],
-        }),
       },
     }),
 

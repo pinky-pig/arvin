@@ -1,0 +1,25 @@
+/**
+  * Dialog 进入和退出动画
+  */
+@keyframes dialog-in {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-50%) scale(0.5);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-50%) scale(1);
+  }
+}
+@keyframes dialog-out {
+  0% {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-50%) scale(1);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-50%) scale(0.5);
+  }
+}
