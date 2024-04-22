@@ -66,11 +66,9 @@ async function typeSentence1() {
   <ShadowCard class="justify-between !p-5px">
     <div>
       <div ref="$s1h" hidden>
-        <div>
+        <div class="text-20px font-[cursive]">
           <span class="text-20px font-[cursive]">
-            我是
-            <span class="text-30px font-[cursive]">Arvin</span>
-            , 目前生活在南京的开发者。我很喜欢 Vue、Nuxt。目前从事前端开发及 WebGIS 。
+            {{ SITE.profileContent }}
           </span>
         </div>
       </div>
