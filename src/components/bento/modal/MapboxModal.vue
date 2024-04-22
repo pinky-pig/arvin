@@ -20,7 +20,7 @@ function marsOnloaded(map: mapboxgl.Map) {
 
 <template>
   <div class="h-60vh max-w-800px w-[calc(100vw_-_40px)]">
-    <MapboxMap @onload="marsOnloaded" />
+    <MapboxMap :options="{ zoom: 1 }" @onload="marsOnloaded" />
   </div>
 </template>
 

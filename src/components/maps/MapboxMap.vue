@@ -26,11 +26,11 @@ onUnmounted(() => {
 function initMars3d(option: any) {
   map = new mapboxgl.Map({
     container: mapContainer.value!,
-    ...option,
     style: MapboxSetting.mapDarkStyle,
     center: [118.888175, 32.048268],
     zoom: 4,
     accessToken: MapboxSetting.token,
+    ...option,
   })
   emit('onload', map)
 }
