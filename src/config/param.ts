@@ -12,6 +12,7 @@ export const SITE = {
   pic: 'https://cdn.fliggy.coblogPagem/upic/2XFNGI.png',
   cv: 'https://cv.mmeme.me/',
   juejin: 'https://juejin.cn/user/149189314490520/posts',
+  mail: 'mailto:2545589993@qq.com',
   homePage: '/',
   profilePage: '/profile',
   twitterId: 'ArvinnWang',
