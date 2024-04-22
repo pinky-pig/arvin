@@ -117,16 +117,32 @@ function startJelloHideAnimate() {
   <ClientOnly>
     <div class="nav-container">
       <!-- item -->
-      <router-link
+
+      <div
         v-for="item in navFilter"
         :key="item.label"
-        :to="item.route"
-        replace
-        class="nav-item"
-        :style="{ height: `${navItemOptions.height}px`, width: `${navItemOptions.width}px` }"
       >
-        {{ item.label }}
-      </router-link>
+        <HoverCard :open-delay="0" :close-delay="0">
+          <HoverCardTrigger>
+            <router-link
+              :to="item.route"
+              replace
+              class="nav-item"
+              :style="{ height: `${navItemOptions.height}px`, width: `${navItemOptions.width}px` }"
+            >
+              {{ item.label }}
+            </router-link>
+          </HoverCardTrigger>
+          <HoverCardContent v-if="item?.children?.length > 0" :side-offset="15" class="w-120px! p-4px!">
+            <div class="flex flex-col items-center justify-start text-14px">
+              <div v-for="it in item.children" :key="it.label" class="option-item h-10 w-full flex cursor-pointer items-center justify-center">
+                {{ it.label }}
+              </div>
+            </div>
+          </HoverCardContent>
+        </HoverCard>
+      </div>
+
       <!-- bg 外层移动，内层动画 -->
       <div
         :style="outerBgStyles"
@@ -159,6 +175,7 @@ function startJelloHideAnimate() {
   box-shadow: var(--ui-second-box-shadow);
 }
 .nav-item {
+  position: relative;
   cursor: pointer;
   border-radius: 50px;
   -webkit-box-align: center;

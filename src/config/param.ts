@@ -26,9 +26,18 @@ export const SITE = {
 }
 
 export const navFilter = [
-  { label: '组件', route: '/' },
-  { label: '文章', route: '/blog' },
-  { label: '项目', route: '/project' },
+  {
+    label: '首页',
+    route: '/',
+    children: [
+      { label: '首页', route: '/' },
+      { label: '留言', route: '/' },
+      { label: '赞助', route: '/' },
+      { label: '友链', route: '/' },
+    ],
+  },
+  { label: '文章', route: '/blog', children: [] },
+  { label: '项目', route: '/project', children: [] },
 ]
 
 export const PROJECTS = [

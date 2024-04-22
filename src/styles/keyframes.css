@@ -23,3 +23,27 @@
     transform: translateX(-50%) translateY(-50%) scale(0.5);
   }
 }
+
+/**
+  * Hover Card 进入和退出动画
+  */
+  @keyframes hover-card-in {
+    0% {
+      transform: translateY(0%);
+    }
+    50% {
+      transform: translateY(-3px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  @keyframes hover-card-out {
+    0% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0;
+    }
+  }
