@@ -1,5 +1,6 @@
 {
   "type": "module",
+  "version": "0.0.1",
   "private": true,
   "packageManager": "pnpm@9.0.4",
   "scripts": {
@@ -10,6 +11,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "preview-https": "serve dist",
+    "release": "bumpp -c -t -p",
     "debug": "vite --debug",
     "build-ssg": "vite-ssg build",
     "test": "vitest",
@@ -61,6 +63,7 @@
     "@vue-macros/volar": "^0.18.18",
     "@vue/test-utils": "^2.4.5",
     "@vueuse/motion": "^2.1.0",
+    "bumpp": "^9.4.0",
     "critters": "^0.0.22",
     "cross-env": "^7.0.3",
     "cypress": "^13.8.0",
