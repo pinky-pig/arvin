@@ -28,6 +28,7 @@ import GitHubAlerts from 'markdown-it-github-alerts'
 import TOC from 'markdown-it-table-of-contents'
 import sharp from 'sharp'
 import { slugify } from './scripts/slugify'
+import operateBlogPlugin from './plugins/operate-blog'
 
 const promises: Promise<any>[] = []
 
@@ -42,6 +43,9 @@ export default defineConfig({
   },
 
   plugins: [
+
+    operateBlogPlugin(),
+
     Vue({
       include: [/\.vue$/, /\.md$/],
     }),

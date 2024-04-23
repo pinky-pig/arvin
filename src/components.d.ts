@@ -40,7 +40,6 @@ declare module 'vue' {
     Mapbox: typeof import('./components/bento/common/Mapbox.vue')['default']
     MapboxMap: typeof import('./components/maps/MapboxMap.vue')['default']
     MapboxModal: typeof import('./components/bento/modal/MapboxModal.vue')['default']
-    Modal: typeof import('./components/bento/common/mapbox/Modal.vue')['default']
     MouseTail: typeof import('./components/bento/custom/MouseTail.vue')['default']
     MouseTailBackground: typeof import('./components/ui/MouseTailBackground.vue')['default']
     Nav: typeof import('./components/header/Nav.vue')['default']
