@@ -26,16 +26,7 @@ export const SITE = {
 }
 
 export const navFilter = [
-  {
-    label: '首页',
-    route: '/',
-    children: [
-      { label: '首页', route: '/' },
-      { label: '留言', route: '/' },
-      { label: '赞助', route: '/' },
-      { label: '友链', route: '/' },
-    ],
-  },
+  { label: '首页', route: '/', children: [] },
   { label: '文章', route: '/blog', children: [] },
   { label: '项目', route: '/project', children: [] },
 ]

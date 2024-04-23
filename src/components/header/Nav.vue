@@ -135,8 +135,8 @@ function startJelloHideAnimate() {
           </HoverCardTrigger>
           <HoverCardContent v-if="item?.children?.length > 0" :side-offset="15" class="w-120px! p-4px!">
             <div class="flex flex-col items-center justify-start text-14px">
-              <div v-for="it in item.children" :key="it.label" class="option-item h-10 w-full flex cursor-pointer items-center justify-center">
-                {{ it.label }}
+              <div v-for="it in item.children" :key="(it as any).label" class="option-item h-10 w-full flex cursor-pointer items-center justify-center">
+                {{ (it as any).label }}
               </div>
             </div>
           </HoverCardContent>
