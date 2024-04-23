@@ -10,15 +10,23 @@ async function handleDelete() {
 </script>
 
 <template>
-  <button @click="handleAdd">
-    add
-  </button>
-  <br>
-  <button @click="handleDelete">
-    delete
-  </button>
+  <div>
+    <button @click="handleAdd">
+      add
+    </button>
+    <br>
+    <button @click="handleDelete">
+      delete
+    </button>
+  </div>
 </template>
 
 <style scoped>
 
 </style>
+
+<route lang="yaml">
+  meta:
+    layout: default
+    bgColor: yellow
+  </route>

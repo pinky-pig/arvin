@@ -23,9 +23,15 @@ export default function operateBlogPlugin(): PluginOption {
           if (type !== 'post' && type !== 'weekly')
             return
 
-          const command = action === 'create'
-            ? `echo. > blog/${type}/${name}.md`
-            : `rimraf blog/${type}/${name}.md`
+          let command = ''
+          if (action === 'create') {
+            command = process.platform !== 'win32'
+              ? `touch blog/${type}/${name}.md`
+              : `echo. blog/${type}/${name}.md`
+          }
+          else {
+            command = `rimraf blog/${type}/${name}.md`
+          }
 
           execSync(command)
         }
