@@ -9,7 +9,6 @@ import AutoImport from 'unplugin-auto-import/vite'
 import Markdown from 'unplugin-vue-markdown/vite'
 import VueI18n from '@intlify/unplugin-vue-i18n/vite'
 import { VitePWA } from 'vite-plugin-pwa'
-import VueDevTools from 'vite-plugin-vue-devtools'
 import LinkAttributes from 'markdown-it-link-attributes'
 import Unocss from 'unocss/vite'
 import WebfontDownload from 'vite-plugin-webfont-dl'
@@ -45,8 +44,6 @@ export default defineConfig({
   plugins: [
 
     operateBlogPlugin(),
-
-    VueDevTools(),
 
     Vue({
       include: [/\.vue$/, /\.md$/],
