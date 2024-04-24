@@ -33,5 +33,15 @@
       "@vue-macros/volar/define-slots"
     ]
   },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "src/typings/**/*.d.ts",
+    "vite.config.*",
+    "components.d.ts",
+    "auto-imports.d.ts"
+  ],
   "exclude": ["dist", "node_modules", "cypress", "eslint.config.js", "postcss.config.js", "tailwind.config.js"]
 }
