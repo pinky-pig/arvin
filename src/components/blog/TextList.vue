@@ -124,12 +124,12 @@ function handleChangeShowMode() {
       <ul class="flex flex-wrap list-none justify-start -m-1">
         <li v-for="item in allPosts" :key="item.name">
           <div
-            border="1px solid #E4E4E7 dark:#3e3e3e"
+            style="border: 1px solid #E4E4E7 "
             :class="
               currentTagAndList.name === item.name
                 ? '!border-neutral-300 !bg-black !text-white !dark:border-[#52525B] !dark:bg-white !dark:text-black '
                 : ''"
-            class="m-1 inline-flex cursor-pointer appearance-none rounded-lg bg-white px-2 py-1 text-center text-xs/tight text-neutral-500 font-bold no-underline transition-colors hover:border-neutral-300 dark:bg-[rgb(24,24,27)] hover:bg-neutral-100 focus:outline-none focus-visible:ring focus:ring-0 focus-visible:ring-neutral-300 dark:hover:border-[#52525B] dark:hover:bg-[#27272A] dark:hover:text-[#E4E4E5]"
+            class="dark:!border-[#3e3e3e] m-1 inline-flex cursor-pointer appearance-none rounded-[6px] bg-white px-2 py-1 text-center text-xs/tight text-neutral-500 font-bold no-underline transition-colors hover:border-neutral-300 dark:bg-[rgb(24,24,27)] hover:bg-neutral-100 focus:outline-none focus-visible:ring focus:ring-0 focus-visible:ring-neutral-300 dark:hover:border-[#52525B] dark:hover:bg-[#27272A] dark:hover:text-[#E4E4E5]"
             @click="handleClick(item)"
           >
             {{ item.name }}
@@ -169,12 +169,12 @@ function handleChangeShowMode() {
           "
           class="relative flex flex-col gap-1"
         >
-          <h1 class="static inline-flex cursor-pointer appearance-none items-center border-0 rounded-md bg-transparent p-0 text-xl font-bold underline decoration-1 underline-offset-2 before:absolute before:left-0 before:top-0 before:block before:h-full before:w-full before:cursor-pointer hover:decoration-dotted focus:outline-none focus-visible:ring focus:ring-0 focus-visible:ring-neutral-300">
+          <h1 class="static inline-flex cursor-pointer appearance-none items-center border-0 rounded-[6px] bg-transparent p-0 text-xl font-bold underline decoration-1 underline-offset-2 before:absolute before:left-0 before:top-0 before:block before:h-full before:w-full before:cursor-pointer hover:decoration-dotted focus:outline-none focus-visible:ring focus:ring-0 focus-visible:ring-neutral-300">
             {{ article.title }}
           </h1>
 
           <div class="flex flex-col gap-1.5 text-[#818188] dark:text-[#CECED1]">
-            <p class="text-14px">
+            <p class="text-[14px]">
               {{ article.desc }}
             </p>
             <div class="[--pm-gap-inner:0.25em] [--pm-gap-x:1em] [--pm-gap-y:0.5em] [--pm-icon-size:1.25em] text-sm">
@@ -203,7 +203,7 @@ function handleChangeShowMode() {
     <!-- 卡片数据 -->
     <div
       v-show="!isShowList"
-      class="grid grid-cols-[repeat(auto-fill,minmax(240px,1fr))] mx-auto mt-6 max-w-970px justify-center gap-10px rounded-xl px-5px text-start md:grid-cols-[repeat(auto-fill,minmax(240px,300px))] md:px-25px"
+      class="grid grid-cols-[repeat(auto-fill,minmax(240px,1fr))] mx-auto mt-6 max-w-[970px] justify-center gap-[10px] rounded-[10px] px-[5px] text-start md:grid-cols-[repeat(auto-fill,minmax(240px,300px))] md:px-[25px]"
     >
       <component
         :is="article.path.includes('://') ? 'a' : 'RouterLink'"
@@ -218,12 +218,12 @@ function handleChangeShowMode() {
             to: article.path,
           }
         "
-        class="relative flex flex-col cursor-pointer justify-center overflow-hidden border-[var(--blog-card-border)] rounded-12px border-solid bg-[var(--blog-card-bg)] object-cover pb-1 text-[var(--blog-card-text)] shadow-md"
+        class="relative flex flex-col cursor-pointer justify-center overflow-hidden border-[var(--blog-card-border)] rounded-[12px] border-solid bg-[var(--blog-card-bg)] object-cover pb-1 text-[var(--blog-card-text)] shadow-md"
         style="border: 5px solid var(--blog-card-border);"
       >
         <img
           :alt="article.title"
-          class="h-200px w-full rounded-t-md object-cover"
+          class="h-[200px] w-full rounded-t-md object-cover"
           :src="
             article.cover
               ? `${article.cover}?x-oss-process=image/resize,w_640/format,webp`

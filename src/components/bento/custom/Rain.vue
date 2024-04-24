@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { Icon } from '@iconify/vue'
 import * as THREE from 'three'
 
 const settings = { fps: 30, parallaxVal: 1 }
@@ -37,10 +38,10 @@ async function init() {
       u_tex0_resolution: { value: new THREE.Vector2(window.innerWidth, window.innerHeight), type: 'v2' },
     } as any,
     vertexShader: `
-      varying vec2 vUv;        
+      varying vec2 vUv;
       void main() {
           vUv = uv;
-          gl_Position = vec4( position, 1.0 );    
+          gl_Position = vec4( position, 1.0 );
       }
     `,
   })
@@ -86,13 +87,13 @@ function toRain() {
     </div>
 
     <button class="detail-arrow" @click="toRain">
-      <div class="h-16px w-16px" i-carbon-arrow-up-right />
+      <Icon class="h-[16px] w-[16px]" icon="carbon-arrow-up-right" />
     </button>
   </div>
 </template>
 
 <style scoped>
-.detail-arrow{
+.detail-arrow {
   pointer-events: auto;
   display: flex;
   justify-content: center;
@@ -109,7 +110,7 @@ function toRain() {
   transition: box-shadow 0.2s ease-out 0s;
 }
 
-.detail-arrow:hover{
+.detail-arrow:hover {
   cursor: pointer;
   box-shadow: var(--card--border) 0px 0px 0px 5px;
 }

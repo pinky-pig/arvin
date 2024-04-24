@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .dark .shiki,
 .dark .shiki span {
   color: var(--s-dark, inherit);
@@ -54,8 +58,12 @@ html:not(.dark) .shiki span {
 
 .prose p > img {
   width: 100%;
-  --uno: shadow rounded-lg;
+  cursor: pointer;
   margin: 2.6em 0;
+  border-radius: .5rem;
+  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .prose {
@@ -170,13 +178,23 @@ h6:focus .header-anchor {
   left: 20px;
   z-index: 200;
   overflow: hidden;
-  --uno: hidden! lg-flex flex-col w-100px lg-w-200px xl-w-300px;
+  opacity: 1 !important;
 }
 
 /* 放到中间 */
 @media only screen and (max-width: 1080px) {
   .table-of-contents {
     position: unset;
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+  }
+
+  .table-of-contents > ul {
+    opacity: 1 !important;
+  }
+
+  .table-of-contents-anchor {
   }
   .table-of-contents > ul{
     opacity: 1 !important;
@@ -184,9 +202,25 @@ h6:focus .header-anchor {
 }
 
 .table-of-contents-anchor {
-  --uno: mx2 w-7 h-7 text-lg flex items-center justify-center bg-base rounded
-    text-hex-8887 border border-base shadow md: border-transparent md:
-    shadow-none transition duration-400;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  width: 48px;
+  height: 48px;
+  font-size: 1.125rem /* 18px */;
+  line-height: 1.75rem /* 28px */;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.25rem;
+
+  border-width: 1px;
+  border-style: solid;
+  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 400ms;
 }
 
 .table-of-contents > ul {
@@ -195,12 +229,18 @@ h6:focus .header-anchor {
   text-overflow: ellipsis;
   height: 100%;
   overflow-y: auto;
-  --uno: rounded op0 mt-1 pb-5 transition duration-700;
+  border-radius: 0.25rem /* 4px */;
+  opacity: 0;
+  margin-top: 4px;
+  padding-bottom: 20px;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 700ms;
 }
 
 *:hover > .table-of-contents > .table-of-contents-anchor,
 .toc-always-on .table-of-contents > .table-of-contents-anchor {
-  --uno: text-inherit;
+  color: inherit;
 }
 
 .toc-always-on .table-of-contents > ul {
@@ -222,7 +262,14 @@ h6:focus .header-anchor {
 }
 
 .table-of-contents ul > li > a {
-  --uno: op75 hover-op100 transition;
+  opacity: 0.75;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.table-of-contents ul > li > a :hover{
+  opacity: 1;
 }
 
 .code-wrap .line {

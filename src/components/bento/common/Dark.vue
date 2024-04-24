@@ -18,7 +18,7 @@ watch(isDark, () => {
 </script>
 
 <template>
-  <ShadowCard class="!p-5px">
+  <ShadowCard class="!p-[5px]">
     <div class="grid h-full w-full place-items-center">
       <label class="switch">
         <input ref="checkboxRef" type="checkbox" @click="toggleDark">

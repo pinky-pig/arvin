@@ -5,7 +5,7 @@ const props = defineProps<DialogTriggerProps>()
 </script>
 
 <template>
-  <DialogTrigger v-bind="props" class="focus-visible:outline-none">
+  <DialogTrigger v-bind="props">
     <slot />
   </DialogTrigger>
 </template>

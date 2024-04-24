@@ -9,13 +9,13 @@ function handleChange(e: CurrentTransitionNameType) {
 </script>
 
 <template>
-  <ShadowCard class="!p-5px">
-    <div class="h-full w-full flex flex-col items-center justify-center gap-16px">
-      <div class="mx-10px w-full px-2">
-        <span class="block text-14px font-bold">
+  <ShadowCard class="!p-[5px]">
+    <div class="h-full w-full flex flex-col items-center justify-center gap-[16px]">
+      <div class="mx-[10px] w-full px-2">
+        <span class="block text-[14px] font-bold">
           页面过渡动画：<span class="capitalize">{{ currentTransitionName.slice(0, 4) }}</span>
         </span>
-        <span class="block text-12px leading-16px opacity-40">
+        <span class="block text-[12px] leading-[16px] opacity-40">
           改变后可以切换页面查看效果
         </span>
       </div>

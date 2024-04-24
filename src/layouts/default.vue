@@ -40,7 +40,7 @@ useEventListener('click', async (e) => {
 <template>
   <main
     class="bg-[var(--bg-main-color)]"
-    :class="isNoneLayout ? '' : 'pt-100px md:pt-100px pb-20 px-10px md:px-5 overflow-x-hidden min-h-screen md:pt-112px '"
+    :class="isNoneLayout ? '' : 'pt-[100px] pb-20 px-[10px] md:px-5 overflow-x-hidden min-h-screen md:pt-[112px] '"
   >
     <Header v-show="!isLargeScreen || !isNoneLayout" />
     <RouterView v-slot="{ Component }">
@@ -52,9 +52,9 @@ useEventListener('click', async (e) => {
     </RouterView>
 
     <Transition name="fade">
-      <div v-if="imageModel" fixed bottom-0 left-0 right-0 top-0 z-500 backdrop-blur-7 @click="imageModel = undefined">
-        <div absolute bottom-0 left-0 right-0 top-0 z--1 bg-black:30 />
-        <img class="mx-auto h-full w-[calc(100%_-_20px)] object-contain" :src="imageModel.src" :alt="imageModel.alt">
+      <div v-if="imageModel" class="fixed bottom-0 left-0 right-0 top-0 z-[500] backdrop-blur " @click="imageModel = undefined">
+        <div class="absolute bottom-0 left-0 right-0 top-0 z-[-1] bg-black:30" />
+        <img class="mx-auto h-[calc(100%_-_20px)] mt-[10px] w-[calc(100%_-_20px)] object-contain" :src="imageModel.src" :alt="imageModel.alt">
       </div>
     </Transition>
 
@@ -62,6 +62,5 @@ useEventListener('click', async (e) => {
       <!-- 鼠标轨迹暂时移除 -->
       <!-- <MouseTailBackground /> -->
     </client-only>
-    <Footer />
   </main>
 </template>

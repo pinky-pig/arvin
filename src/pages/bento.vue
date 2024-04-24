@@ -119,14 +119,11 @@ watch(width, () => {
 
 <template>
   <div
-    text="xl gray4"
-    flex
-    justify-center
-    gap-3
+    class="text-xl text-gray-400 flex justify-center gap-3"
   >
     <div
       ref="containerRef"
-      grid mx-auto w-full select-none place-items-center
+      class="grid mx-auto w-full select-none place-items-center"
     >
       <client-only>
         <Bento
@@ -140,7 +137,7 @@ watch(width, () => {
           @drag-end="print('drag-end', $event)"
         >
           <template #bento-item-placeholder>
-            <div class="h-full w-full rounded-3xl bg-current opacity-10" />
+            <div class="h-full w-full rounded-[12px] bg-current opacity-10" />
           </template>
         </Bento>
       </client-only>

@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { Icon } from '@iconify/vue'
+
 const router = useRouter()
 function toPreview() {
   router.push('/preview')
@@ -7,16 +9,16 @@ function toPreview() {
 
 <template>
   <ShadowCard
-    class="relative select-none overflow-hidden bg-[var(--card--bg)] !p-5px"
+    class="relative select-none overflow-hidden bg-[var(--card--bg)] !p-[5px]"
   >
-    <div class="pointer-events-auto absolute left-1/2 top-1/3 h-40px w-6rem -translate-1/2">
-      <span class="cursor-pointer underline underline-light-50 underline-offset-8px hover:text-#fff">
+    <div class="pointer-events-auto absolute left-1/2 top-1/3 h-[40px] w-[6rem] translate-x-[-50%] translate-y-[-50%]">
+      <span class="cursor-pointer underline underline-light-50 underline-offset-[8px] hover:text-#fff">
         预览网站
       </span>
     </div>
 
     <button class="detail-arrow" @click="toPreview">
-      <div class="h-16px w-16px" i-carbon-arrow-up-right />
+      <Icon class="h-[16px] w-[16px]" icon="carbon-arrow-up-right" />
     </button>
   </ShadowCard>
 </template>

@@ -9,9 +9,7 @@ import App from './App.vue'
 import '@shikijs/twoslash/style-rich.css'
 import 'shiki-magic-move/style.css'
 import type { UserModule } from './types'
-import '@unocss/reset/tailwind.css'
 import './styles/global.css'
-import 'uno.css'
 
 const routes = autoRoutes.map((i: { path: string }) => {
   return {

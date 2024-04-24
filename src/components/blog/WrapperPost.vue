@@ -84,7 +84,7 @@ onActivated(() => {
 </script>
 
 <template>
-  <main style="font-family: LXGW WenKai Screen R;" class="mx-auto max-w-760px w-full rounded-xl border-unset bg-transparent px-2 pt-10px text-start md:border md:border-[var(--blog--border)] md:border-solid md:bg-[var(--blog-bg)] md:p-10 md:px-36px">
+  <main style="font-family: LXGW WenKai Screen R;" class="mx-auto max-w-[760px] w-full rounded-[10px] border-unset bg-transparent px-2 pt-[10px] text-start md:border md:border-[var(--blog--border)] md:border-solid md:bg-[var(--blog-bg)] md:p-10 md:px-[36px]">
     <ClientOnly v-if="frontmatter.plum">
       <Plum />
     </ClientOnly>
@@ -141,7 +141,7 @@ onActivated(() => {
     <div class="slide-enter m-auto mt-8 animate-delay-500 prose print:hidden">
       <!-- <div class="h-1 w-full border-t" /> -->
 
-      <div class="mb-10px flex flex-col items-center justify-between font-mono op50 md:flex-row hover:op75">
+      <div class="mb-[10px] flex flex-col items-center justify-between font-mono op50 md:flex-row hover:op75">
         <div class="flex-1">
           发布日期: {{ frontmatter.date }}
         </div>

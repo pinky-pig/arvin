@@ -81,7 +81,7 @@ function calVelocity(lastX: number, currentX: number, lastTime: number, currentT
 <template>
   <div
     ref="target" :class="isDragging ? '' : 'element'" :style="style"
-    class="pointer-events-auto fixed z-999 grid cursor-pointer touch-none select-none place-items-center rounded-md"
+    class="pointer-events-auto fixed z-999 grid cursor-pointer touch-none select-none place-items-center rounded-[6px]"
   >
     <svg
       class="scale-70"
@@ -123,7 +123,7 @@ function calVelocity(lastX: number, currentX: number, lastTime: number, currentT
       </g>
     </svg>
 
-    <span class="absolute left-72px top-52px select-none text-4xl font-extrabold">
+    <span class="absolute left-[72px] top-[52px] select-none text-4xl font-extrabold">
       {{ rotationDelta.toFixed(2) }}
     </span>
     <slot />

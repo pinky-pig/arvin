@@ -3,7 +3,7 @@ const isOpen = ref(false)
 </script>
 
 <template>
-  <ShadowCard class="!p-5px">
+  <ShadowCard class="!p-[5px]">
     <div class="grid h-full w-full place-items-center text-[--text-color]" @click="isOpen = true">
       <svg class="pointer-events-auto scale-150 cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor">
         <path

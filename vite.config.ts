@@ -10,7 +10,6 @@ import Markdown from 'unplugin-vue-markdown/vite'
 import VueI18n from '@intlify/unplugin-vue-i18n/vite'
 import { VitePWA } from 'vite-plugin-pwa'
 import LinkAttributes from 'markdown-it-link-attributes'
-import Unocss from 'unocss/vite'
 import WebfontDownload from 'vite-plugin-webfont-dl'
 import VueRouter from 'unplugin-vue-router/vite'
 import { VueRouterAutoImports } from 'unplugin-vue-router'
@@ -20,7 +19,8 @@ import matter from 'gray-matter'
 
 import MarkdownItShiki from '@shikijs/markdown-it'
 import { rendererRich, transformerTwoslash } from '@shikijs/twoslash'
-
+import tailwind from 'tailwindcss'
+import autoprefixer from 'autoprefixer'
 import anchor from 'markdown-it-anchor'
 import GitHubAlerts from 'markdown-it-github-alerts'
 
@@ -32,9 +32,15 @@ import operateBlogPlugin from './plugins/operate-blog'
 const promises: Promise<any>[] = []
 
 export default defineConfig({
+  css: {
+    postcss: {
+      plugins: [tailwind(), autoprefixer()],
+    },
+  },
   resolve: {
     alias: {
       '~/': `${path.resolve(__dirname, 'src')}/`,
+      '@/': `${path.resolve(__dirname, 'src')}/`,
     },
   },
   build: {
@@ -115,9 +121,6 @@ export default defineConfig({
       include: [/\.vue$/, /\.vue\?vue/, /\.md$/],
       dts: 'src/components.d.ts',
     }),
-
-    // https://github.com/antfu/unocss
-    Unocss(),
 
     // https://github.com/unplugin/unplugin-vue-markdown
     Markdown({

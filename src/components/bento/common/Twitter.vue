@@ -3,7 +3,7 @@
 // https://github.com/georgedoescode/squircle
 // https://www.cocoanetics.com/2013/06/ios-7-icon-squircle/
 // https://www.w3cplus.com/css/smooth-corners-with-css-houdini.html
-
+import { Icon } from '@iconify/vue'
 import { SITE } from '~/config/param'
 
 function open(twitterUrl = SITE.twitterUrl) {
@@ -21,12 +21,12 @@ function open(twitterUrl = SITE.twitterUrl) {
     />
 
     <div
-      class="pointer-events-auto relative z99 cursor-pointer !select-none"
+      class="pointer-events-auto relative z-99 cursor-pointer !select-none"
       @click="open()"
     >
-      <div
+      <Icon
         class="h-20 w-20 text-white transition-transform duration-300 ease-in-out hover:scale-110 hover:animate-[shake_1.5s_ease-in-out_infinite] dark:text-[#98CFFF]"
-        i-carbon:logo-twitter
+        icon="carbon:logo-twitter"
       />
     </div>
   </div>

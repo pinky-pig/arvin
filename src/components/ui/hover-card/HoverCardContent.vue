@@ -6,6 +6,7 @@ import {
   HoverCardPortal,
   useForwardProps,
 } from 'radix-vue'
+import { cn } from '@/utils/shadcn-vue-utils'
 
 const props = withDefaults(
   defineProps<HoverCardContentProps & { class?: HTMLAttributes['class'] }>(),
@@ -27,9 +28,12 @@ const forwardedProps = useForwardProps(delegatedProps)
   <HoverCardPortal>
     <HoverCardContent
       v-bind="forwardedProps"
-      class="text-popover-foreground data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2 z-50 w-64 border border-[var(--card--border)] rounded-md p-4 shadow-md outline-none data-[state=closed]:animate-[hover-card-out] data-[state=open]:animate-[hover-card-in] dark:bg-[var(--ui-main-bg)]"
-      :class="props.class"
-      style="backdrop-filter: saturate(50%) blur(8px);"
+      :class="
+        cn(
+          'z-50 w-64 rounded-md border bg-popover p-4 text-popover-foreground shadow-md outline-none data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2',
+          props.class,
+        )
+      "
     >
       <slot />
     </HoverCardContent>

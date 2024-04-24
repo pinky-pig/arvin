@@ -40,7 +40,7 @@ async function handleSave(_post: any) {
         </div>
       </div>
 
-      <textarea class="ml-6 w-600px" resize-initial :value="postsMap.get(currentPost)?.raw" />
+      <textarea class="ml-6 w-[600px]" resize-initial :value="postsMap.get(currentPost)?.raw" />
 
       <button @click="handleSave">
         save

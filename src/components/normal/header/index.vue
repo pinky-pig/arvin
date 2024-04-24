@@ -6,12 +6,12 @@ import HeaderNav from './Nav.vue'
 <template>
   <div
     id="nav-bg"
-    class="fixed left-0 top-0 z-2 h-fit w-full flex flex-row items-center justify-between px-3.5vw py-18px md:h-80px md:py-unset"
+    class="fixed left-0 top-0 z-[2] h-fit w-full flex flex-row items-center justify-between px-[3.5vw] py-[18px] md:h-[80px] md:py-unset"
   >
     <HeaderLogo />
     <HeaderNav />
 
-    <div class="grid h-40px w-40px place-items-center">
+    <div class="grid h-[40px] w-[40px] place-items-center">
       <DarkToggle />
     </div>
   </div>

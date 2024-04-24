@@ -32,7 +32,7 @@ const emit = defineEmits(['click'])
   >
     <span class="dockbar-tooltiptext">{{ props.tooltip }}</span>
 
-    <div class=" w-16px h-16px m-auto text-16px">
+    <div class=" w-[16px] h-[16px] m-auto text-[16px]">
       <slot />
     </div>
   </button>
@@ -52,7 +52,7 @@ const emit = defineEmits(['click'])
 }
 .dockbar-tooltip .dockbar-tooltiptext {
   text-align: center;
-  font-size: .875rem;
+  font-size: 0.875rem;
   line-height: 1.25rem;
   visibility: hidden;
   width: 120px;
@@ -66,20 +66,21 @@ const emit = defineEmits(['click'])
   margin-left: -60px;
 }
 .animate-jelly:hover {
-  animation: jelly .5s;
+  animation: jelly 0.5s;
 }
 @keyframes jelly {
-  0%, 100% {
+  0%,
+  100% {
     transform: scale(1);
   }
   25% {
-    transform: scale(.9, 1.1);
+    transform: scale(0.9, 1.1);
   }
   50% {
-    transform: scale(1.1, .9);
+    transform: scale(1.1, 0.9);
   }
   75% {
-    transform: scale(.95, 1.05);
+    transform: scale(0.95, 1.05);
   }
 }
 </style>

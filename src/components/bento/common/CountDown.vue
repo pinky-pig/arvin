@@ -42,27 +42,27 @@ function countdownTime() {
 </script>
 
 <template>
-  <ShadowBlock class="h-300px w-400px text-5rem">
+  <ShadowBlock class="h-[300px] w-[400px] text-[5rem]">
     <div class="relative h-full w-full" style="font-family: Digital">
-      <span class="absolute left-50% top-50% w-180px flex flex-row -translate-1/2">
+      <span class="absolute left-[50%] top-[50%] w-[180px] flex flex-row -translate-x-1/2 -translate-y-1/2">
         <span>{{ time.slice(0, 2) }}</span>
         <div class="relative grid w-fit place-items-center">
           <div class="opacity-0">:</div>
-          <div class="absolute left-1px top-0 w-full">.</div>
+          <div class="absolute left-[1px] top-0 w-full">.</div>
         </div>
         <span>{{ time.slice(3) }}</span>
       </span>
       <span
         v-show="Number(time) !== 100 && Number(time) !== 100.00"
-        class="absolute left-50% top-50% w-180px text-[#0000001c] -translate-1/2 dark:text-[#ffffff1c]"
+        class="absolute left-[50%] top-[50%] w-[180px] text-[#0000001c] -translate-x-1/2 -translate-y-1/2 dark:text-[#ffffff1c]"
       >
         00:00
       </span>
 
-      <span class="absolute left-[calc(50%_-_150px)] top-50% text-24px opacity-30">
+      <span class="absolute left-[calc(50%_-_150px)] top-[50%] text-[24px] opacity-30">
         <span>{{ new Date().getFullYear() }}</span>
       </span>
-      <span class="absolute left-[calc(50%_+_100px)] top-50% text-24px opacity-30">
+      <span class="absolute left-[calc(50%_+_100px)] top-[50%] text-[24px] opacity-30">
         %
       </span>
     </div>

@@ -1,5 +1,5 @@
 import { SITE } from '~/config'
-import '~/components/lit-components'
+import '~/components/normal/lit-components'
 
 export function AppSetup() {
   onMounted(() => {

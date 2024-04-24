@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import Typed from 'typed.js'
 import { SITE } from '~/config/param'
-
+import { Icon } from '@iconify/vue'
 const typedInstance = ref<Typed>()
 const iconRef = ref<HTMLElement | null>(null)
 const avatarBgRef = ref<HTMLElement | null>(null)
@@ -63,11 +63,11 @@ async function typeSentence1() {
 </script>
 
 <template>
-  <ShadowCard class="justify-between !p-5px">
+  <ShadowCard class="justify-between !p-[5px]">
     <div>
       <div ref="$s1h" hidden>
-        <div class="text-20px font-[cursive]">
-          <span class="text-20px font-[cursive]">
+        <div class="text-[20px] font-[cursive]">
+          <span class="text-[20px] font-[cursive]">
             {{ SITE.profileContent }}
           </span>
         </div>
@@ -75,9 +75,10 @@ async function typeSentence1() {
     </div>
 
     <div class="pointer-events-none relative min-h-[calc(100%_-_50px)] p-6">
-      <div class="relative mb-30px h-96px w-96px">
-        <div ref="avatarImgRef" class="avatar-img absolute left-0 top-0 z-20 mb-8 h-96px w-96px rounded-full dark:bg-[var(--header-avatar-bg)]">
-          <div v-if="currentAvatar === 'Arvin'" class="h-full w-full" i-fluent-emoji:partying-face />
+      <div class="relative mb-[30px] h-[96px] w-[96px]">
+        <div ref="avatarImgRef" class="avatar-img absolute left-0 top-0 z-20 mb-8 h-[96px] w-[96px] rounded-full dark:bg-[var(--header-avatar-bg)]">
+          <Icon v-if="currentAvatar === 'Arvin'" icon="fluent-emoji:partying-face" class="h-full w-full" />
+
           <img v-else ref="avatarImgRef" class="h-full w-full" src="/logo.png" alt="">
         </div>
         <div ref="avatarBgRef" class="avatar-bg" />

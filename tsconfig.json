@@ -7,7 +7,8 @@
     "module": "ESNext",
     "moduleResolution": "node",
     "paths": {
-      "~/*": ["src/*"]
+      "~/*": ["src/*"],
+      "@/*": ["src/*"]
     },
     "resolveJsonModule": true,
     "types": [
@@ -32,5 +33,5 @@
       "@vue-macros/volar/define-slots"
     ]
   },
-  "exclude": ["dist", "node_modules", "cypress", "eslint.config.js"]
+  "exclude": ["dist", "node_modules", "cypress", "eslint.config.js", "postcss.config.js", "tailwind.config.js"]
 }

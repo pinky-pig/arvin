@@ -1,9 +1,11 @@
 <script setup lang="ts">
+import { Icon } from '@iconify/vue'
+
 import type { LngLatLike } from 'mapbox-gl'
 import mapboxgl from 'mapbox-gl'
 import MapboxModal from '~/components/bento/modal/MapboxModal.vue'
 
-import ShadowCard from '~/components/ui/ShadowCard.vue'
+import ShadowCard from '~/components/bento/wrapper/ShadowCard.vue'
 import { SITE } from '~/config/param'
 
 const online = useOnline()
@@ -24,7 +26,7 @@ function marsOnloaded(map: mapboxgl.Map) {
 </script>
 
 <template>
-  <ShadowCard class="!p-5px dark:!p-0">
+  <ShadowCard class="!p-[5px] dark:!p-0">
     <div v-if="!online" class="mt-1/5 h-full w-full text-center font-[fantasy] italic">
       You are offline
     </div>
@@ -33,9 +35,9 @@ function marsOnloaded(map: mapboxgl.Map) {
 
     <Dialog>
       <DialogTrigger class="detail-arrow">
-        <div class="h-16px w-16px" i-carbon-arrow-up-right />
+        <Icon class="h-[16px] w-[16px]" icon="carbon-arrow-up-right" />
       </DialogTrigger>
-      <DialogContent class="h-fit max-w-unset w-fit p-10px bg-[var(--card--border)]!">
+      <DialogContent class="h-fit max-w-unset w-fit p-[10px] bg-[var(--card--border)]!">
         <DialogTitle />
         <DialogDescription />
 

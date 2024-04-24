@@ -3,12 +3,12 @@ const isOpen = ref(false)
 </script>
 
 <template>
-  <ShadowCard class="!p-5px">
+  <ShadowCard class="!p-[5px]">
     <div
-      class="h-full w-full flex flex-col items-center justify-center gap-10px text-[--text-color]"
+      class="h-full w-full flex flex-col items-center justify-center gap-[10px] text-[--text-color]"
       @click="isOpen = true"
     >
-      <p class="en pointer-events-auto mr-50px w-100px cursor-pointer text-3xl font-extrabold transition-all duration-300 ease-in-out">
+      <p class="en pointer-events-auto mr-[50px] w-[100px] cursor-pointer text-3xl font-extrabold transition-all duration-300 ease-in-out">
         Stroke Text
       </p>
       <span class="cn pointer-events-auto cursor-pointer text-4xl font-extrabold transition-all duration-300 ease-in-out">描边字体</span>

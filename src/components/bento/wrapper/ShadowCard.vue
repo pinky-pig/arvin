@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div class="card-outer border-0 dark:border-5px dark:border-[var(--card--border)] dark:border-solid">
+  <div class="card-outer border-0 dark:border-[5px] dark:border-[var(--card--border)] dark:border-solid">
     <div class="card-content">
       <slot name="default" />
     </div>

@@ -2,18 +2,18 @@
 </script>
 
 <template>
-  <div class="cover-container relative h-full w-full overflow-hidden rounded-10px bg-[var(--cover-main-color)]">
-    <div class="inner-container pointer-events-none absolute left-1/2 top-1/2 h-9/10 w-9/10 border-2px border-[#457AF7] rounded-md border-solid bg-[var(--cover-main-color)] px-4 py-8 -translate-1/2 dark:border-[#474d63]">
-      <span class="pointer-events-none absolute inset-0 m-10px select-none border-2 border-[#457AF7] border-dashed opacity-100 dark:border-[#474d63]">
+  <div class="cover-container relative h-full w-full overflow-hidden rounded-[10px] bg-[var(--cover-main-color)]">
+    <div class="inner-container pointer-events-none absolute left-1/2 top-1/2 !h-[90%] !w-[90%] border-[2px] border-[#457AF7] rounded-[6px] border-solid bg-[var(--cover-main-color)] px-4 py-8 translate-x-[-50%] translate-y-[-50%] dark:border-[#474d63]">
+      <span class="pointer-events-none absolute inset-0 m-[10px] select-none border-2 border-[#457AF7] border-dashed opacity-100 dark:border-[#474d63]">
         <span class="absolute h-1.5 w-1.5 border border-[#457AF7] bg-[#457AF7] -left-0.5 -top-0.5" />
         <span class="absolute h-1.5 w-1.5 border border-[#457AF7] bg-[#457AF7] -right-0.5 -top-0.5" />
         <span class="absolute h-1.5 w-1.5 border border-[#457AF7] bg-[#457AF7] -bottom-0.5 -left-0.5" />
         <span class="absolute h-1.5 w-1.5 select-none border border-[#457AF7] bg-[#457AF7] -bottom-0.5 -right-0.5" />
 
-      <!-- <span class="absolute h-200% w-1px select-none border border-[#457AF7] border-dashed -left-0.5 -top-1/2" />
-      <span class="absolute h-200% w-1px select-none border border-[#457AF7] border-dashed -right-0.5 -top-1/2" />
-      <span class="absolute h-1px w-200% select-none border border-[#457AF7] border-dashed -left-1/2 -top-0.5" />
-      <span class="absolute h-1px w-200% select-none border border-[#457AF7] border-dashed -bottom-0.5 -right-1/2" /> -->
+      <!-- <span class="absolute h-200% w-[1px] select-none border border-[#457AF7] border-dashed -left-0.5 -top-1/2" />
+      <span class="absolute h-200% w-[1px] select-none border border-[#457AF7] border-dashed -right-0.5 -top-1/2" />
+      <span class="absolute h-[1px] w-200% select-none border border-[#457AF7] border-dashed -left-1/2 -top-0.5" />
+      <span class="absolute h-[1px] w-200% select-none border border-[#457AF7] border-dashed -bottom-0.5 -right-1/2" /> -->
       </span>
 
       <div class="text-[36px] text-[#c29048] font-bold leading-normal font-[fantasy]">

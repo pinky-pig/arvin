@@ -1,9 +1,14 @@
-@import 'mapbox-gl/dist/mapbox-gl.css';
+@import url('mapbox-gl/dist/mapbox-gl.css');
 @import url('./fonts.css');
 @import url('./theme.css');
 @import './markdown.css';
 @import './prose.css';
 @import './keyframes.css';
+@import './shadcn.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 /* https://etceteratype.co/gluten 字体 */
 /* @import url('https://fonts.googleapis.com/css2?family=Gluten:wght@100;200;300;400;500;600;700;800;900&display=swap'); */
@@ -44,6 +49,10 @@ body::after {
       transparent 1px,
       transparent 30px
     );
+}
+
+.table-of-contents{
+  opacity: 0;
 }
 
 html.dark {

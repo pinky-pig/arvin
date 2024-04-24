@@ -122,7 +122,7 @@ function loop() {
 <template>
   <div class="relative h-60vh w-full">
     <svg
-      class="absolute left-0 top-0 h-full w-full touch-none border-5px border-[var(--modal-border)] border-solid"
+      class="absolute left-0 top-0 h-full w-full touch-none border-[5px] border-[var(--modal-border)] border-solid"
       :style="{ pointerEvents: svgPointerEvent ? 'auto' : 'none' }"
       @pointerdown="handlePointerDown"
       @pointermove="handlePointerMove"

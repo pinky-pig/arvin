@@ -19,7 +19,7 @@ function open(twitterUrl = 'https://twitter.com/ArvinnWang') {
     />
 
     <div
-      class="pointer-events-auto relative z99 cursor-pointer !select-none"
+      class="pointer-events-auto relative z-[99] cursor-pointer !select-none"
       @click="open()"
     >
       <div
