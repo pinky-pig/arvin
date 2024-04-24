@@ -1,9 +1,5 @@
 <template>
-  <main class="px-10 py-20 text-center">
+  <Suspense>
     <RouterView />
-    <Footer />
-    <div class="mx-auto mt-5 text-center text-sm opacity-25">
-      [Home Layout]
-    </div>
-  </main>
+  </Suspense>
 </template>
