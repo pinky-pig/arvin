@@ -1,22 +1,20 @@
 <script setup lang="ts">
-const props = defineProps<{
-  class?: string
-  style?: any
-}>()
+
 </script>
 
 <template>
-  <div
-    class="sunrays"
-    :class="props.class"
-    :style="props.style"
-  >
+  <div class="sunrays">
     <div class="light" />
   </div>
 </template>
 
 <style scoped>
 .sunrays {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   opacity: 0.8;
   transform-origin: left top;
   perspective: 5px;
