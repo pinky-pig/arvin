@@ -84,7 +84,7 @@ onActivated(() => {
 </script>
 
 <template>
-  <main style="font-family: LXGW WenKai Screen R;" class="mx-auto max-w-[760px] w-full rounded-[10px] border-unset bg-transparent px-2 pt-[10px] text-start md:border md:border-[var(--blog--border)] md:border-solid md:bg-[var(--blog-bg)] md:p-10 md:px-[36px]">
+  <main id="blog-root" style="font-family: LXGW WenKai Screen R;" class="relative z-[1] mx-auto max-w-[760px] w-full rounded-[10px] border-unset bg-transparent px-2 pt-[10px] text-start md:border md:border-[var(--blog--border)] md:border-solid md:bg-[var(--blog-bg)] md:p-10 md:px-[36px]">
     <ClientOnly v-if="frontmatter.plum">
       <Plum />
     </ClientOnly>
@@ -169,3 +169,22 @@ onActivated(() => {
     <ScrollTopButton />
   </main>
 </template>
+
+<style scoped>
+#blog-root::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(/noise.png);
+  background-repeat: repeat;
+  opacity: 0.04;
+  z-index: -1;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+</style>
