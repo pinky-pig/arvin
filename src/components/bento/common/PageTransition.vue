@@ -177,7 +177,7 @@ function handleChange(e: CurrentTransitionNameType) {
 }
 
 /* Dark mode */
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --bg: #5c6270;
     --fg: #e3e4e8;
@@ -252,5 +252,5 @@ function handleChange(e: CurrentTransitionNameType) {
       0 -0.1em 0 #722257 inset,
       -0.1em -0.2em 0 #ffffff7f inset;
   }
-}
+} */
 </style>

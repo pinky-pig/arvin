@@ -1,12 +1,18 @@
 export const appName = 'Arvin'
 export const appDescription = 'Arvin Web App'
 
+export const navFilter = [
+  { label: '首页', route: '/', children: [] },
+  { label: '文章', route: '/blog', children: [] },
+  { label: '项目', route: '/project', children: [] },
+]
+
 export const SITE = {
   title: '博客',
   author: 'Arvin',
   description: '记录 Arvin 的不枯燥生活',
   profileContent: '我是Arvin，目前生活在南京的开发者。我很喜欢 Vue、Nuxt。目前从事前端开发及 WebGIS 。',
-  keywords: 'Arvin,Pinky-pig,Blog,前端,Vue',
+  keywords: 'Arvin, Blog, 前端, Vue, 博客',
   coordinate: [118.888175, 32.048268],
   icon: 'https://cdn.jsdelivr.net/gh/pinky-pig/pic-bed/imageslogo.svg',
   pic: 'https://cdn.fliggy.coblogPagem/upic/2XFNGI.png',
@@ -25,12 +31,34 @@ export const SITE = {
   consoleColorFulOutput: '%cDon\'t ignore your dreams \nDon\'t work too much \nsay what you think \ncultivate friendships \nbe happy~ ',
 }
 
-export const navFilter = [
-  { label: '首页', route: '/', children: [] },
-  { label: '文章', route: '/blog', children: [] },
-  { label: '项目', route: '/project', children: [] },
+/**
+ * 首页 Bento 通用组件布局
+ */
+export const bentoCommonComponentsCfg = [
+  { id: 'Profile', x: 0, y: 0, width: 2, height: 2, index: 0 },
+  { id: 'Weekly', x: 2, y: 0, width: 2, height: 1, index: 0 },
+  { id: 'Mapbox', x: 0, y: 1, width: 2, height: 1, index: 0 },
+  { id: 'Dark', x: 3, y: 1, width: 1, height: 1, index: 0 },
+  { id: 'CountDown', x: 3, y: 1, width: 2, height: 1, index: 0 },
+  { id: 'Twitter', x: 4, y: 1, width: 1, height: 1, index: 0 },
+  { id: 'PlaneView', x: 0, y: 2, width: 1, height: 2, index: 0 },
+  { id: 'DragMotion', x: 3, y: 2, width: 1, height: 1, index: 0 },
+  { id: 'Notion', x: 3, y: 2, width: 1, height: 1, index: 0 },
+  { id: 'PageTransition', x: 4, y: 2, width: 1, height: 1, index: 0 },
 ]
 
+/**
+ * 首页 Bento 自定义组件布局
+ */
+export const bentoCustomComponentsCfg = [
+  { id: 'StrokeText', x: 2, y: 2, width: 1, height: 1, index: 0 },
+  { id: 'Sticker8', x: 3, y: 3, width: 1, height: 1, index: 0 },
+  { id: 'Cover', x: 0, y: 2, width: 1, height: 2, index: 0 },
+]
+
+/**
+ * 项目的内容
+ */
 export const PROJECTS = [
   {
     name: 'Arvin',

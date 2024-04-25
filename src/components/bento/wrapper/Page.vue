@@ -52,11 +52,11 @@ function closeAndToHome() {
 </template>
 
 <style scoped>
-.bubbleCardUp{
-  animation: slide-up .6s ease-in-out;
+.bubbleCardUp {
+  animation: slide-up 0.6s ease-in-out;
 }
 
-.return-arrow{
+.return-arrow {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -66,16 +66,16 @@ function closeAndToHome() {
   border-radius: 18px;
   color: var(--text-color);
   background: var(--card--bg);
-  box-shadow: var(--card--border) 0px 0px 0px 2px;
+  box-shadow: var(--card-border) 0px 0px 0px 2px;
   transition: box-shadow 0.2s ease-out 0s;
 }
-.return-arrow:hover{
+.return-arrow:hover {
   cursor: pointer;
-  box-shadow: var(--card--border) 0px 0px 0px 5px;
+  box-shadow: var(--card-border) 0px 0px 0px 5px;
 }
 
-.bubbleCardDown{
-  animation: slide-down .6s ease-in-out;
+.bubbleCardDown {
+  animation: slide-down 0.6s ease-in-out;
 }
 @keyframes slide-up {
   0% {

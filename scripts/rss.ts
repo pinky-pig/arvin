@@ -27,7 +27,7 @@ async function buildBlogRSS() {
 
   const options = {
     title: 'Arvin',
-    description: 'Anthony Fu\' Blog',
+    description: 'Arvin\' Blog',
     id: 'https://mmeme.me/',
     link: 'https://mmeme.me/',
     copyright: 'CC BY-NC-SA 4.0 2021 © Anthony Fu',

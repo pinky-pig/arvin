@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { SITE } from '~/config/param'
 import { Icon } from '@iconify/vue'
+import { SITE } from '~/config/param'
 </script>
 
 <template>
@@ -16,7 +16,7 @@ import { Icon } from '@iconify/vue'
       class="detail-arrow"
       :href="SITE.notion" target="_blank"
     >
-      <Icon class="h-[16px] w-[16px]" icon='carbon-arrow-up-right' />
+      <Icon class="h-[16px] w-[16px]" icon="carbon-arrow-up-right" />
     </a>
   </ShadowCard>
 </template>
@@ -35,12 +35,12 @@ import { Icon } from '@iconify/vue'
   color: var(--text-color);
   border-radius: 18px;
   background: var(--card--bg);
-  box-shadow: var(--card--border) 0px 0px 0px 2px;
+  box-shadow: var(--card-border) 0px 0px 0px 2px;
   transition: box-shadow 0.2s ease-out 0s;
 }
 
 .detail-arrow:hover {
   cursor: pointer;
-  box-shadow: var(--card--border) 0px 0px 0px 5px;
+  box-shadow: var(--card-border) 0px 0px 0px 5px;
 }
 </style>

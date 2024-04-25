@@ -19,8 +19,8 @@ function marsOnloaded(map: mapboxgl.Map) {
 </script>
 
 <template>
-  <div class="h-60vh max-w-[800px] w-[calc(100vw_-_40px)]">
-    <MapboxMap :options="{ zoom: 1 }" @onload="marsOnloaded" />
+  <div class="h-[calc(60vh_-_60px)] max-w-[800px] w-[calc(100vw_-_60px)]">
+    <MapboxMap class="rounded-lg" :options="{ zoom: 1 }" @onload="marsOnloaded" />
   </div>
 </template>
 

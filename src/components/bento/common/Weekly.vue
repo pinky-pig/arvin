@@ -19,7 +19,7 @@ import { SITE } from '~/config/param'
     >
 
     <a class="detail-arrow" :href="SITE.weeklyUrl" target="_blank">
-      <Icon class="h-[16px] w-[16px]" icon='carbon-arrow-up-right' />
+      <Icon class="h-[16px] w-[16px]" icon="carbon-arrow-up-right" />
     </a>
   </div>
 </template>
@@ -38,12 +38,12 @@ import { SITE } from '~/config/param'
   color: var(--text-color);
   border-radius: 18px;
   background: var(--card--bg);
-  box-shadow: var(--card--border) 0px 0px 0px 2px;
+  box-shadow: var(--card-border) 0px 0px 0px 2px;
   transition: box-shadow 0.2s ease-out 0s;
 }
 
 .detail-arrow:hover {
   cursor: pointer;
-  box-shadow: var(--card--border) 0px 0px 0px 5px;
+  box-shadow: var(--card-border) 0px 0px 0px 5px;
 }
 </style>

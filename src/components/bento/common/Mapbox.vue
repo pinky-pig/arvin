@@ -37,9 +37,9 @@ function marsOnloaded(map: mapboxgl.Map) {
       <DialogTrigger class="detail-arrow">
         <Icon class="h-[16px] w-[16px]" icon="carbon-arrow-up-right" />
       </DialogTrigger>
-      <DialogContent class="h-fit max-w-unset w-fit p-[10px] bg-[var(--card--border)]!">
-        <DialogTitle />
-        <DialogDescription />
+      <DialogContent class="h-fit max-w-unset w-fit p-[10px] !bg-[var(--card-border)] border-[var(--card-border)]">
+        <DialogTitle v-show="false" />
+        <DialogDescription v-show="false" />
 
         <MapboxModal />
       </DialogContent>
@@ -61,12 +61,12 @@ function marsOnloaded(map: mapboxgl.Map) {
   color: var(--text-color);
   border-radius: 18px;
   background: var(--card--bg);
-  box-shadow: var(--card--border) 0px 0px 0px 2px;
+  box-shadow: var(--card-border) 0px 0px 0px 2px;
   transition: box-shadow 0.2s ease-out 0s;
 }
 
 .detail-arrow:hover {
   cursor: pointer;
-  box-shadow: var(--card--border) 0px 0px 0px 5px;
+  box-shadow: var(--card-border) 0px 0px 0px 5px;
 }
 </style>

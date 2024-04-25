@@ -37,12 +37,12 @@ function toPreview() {
   color: var(--text-color);
   border-radius: 18px;
   background: var(--card--bg);
-  box-shadow: var(--card--border) 0px 0px 0px 2px;
+  box-shadow: var(--card-border) 0px 0px 0px 2px;
   transition: box-shadow 0.2s ease-out 0s;
 }
 
 .detail-arrow:hover {
   cursor: pointer;
-  box-shadow: var(--card--border) 0px 0px 0px 5px;
+  box-shadow: var(--card-border) 0px 0px 0px 5px;
 }
 </style>

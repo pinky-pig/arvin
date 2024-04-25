@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import Typed from 'typed.js'
-import { SITE } from '~/config/param'
 import { Icon } from '@iconify/vue'
+import { SITE } from '~/config/param'
+
 const typedInstance = ref<Typed>()
 const iconRef = ref<HTMLElement | null>(null)
 const avatarBgRef = ref<HTMLElement | null>(null)
@@ -141,13 +142,13 @@ async function typeSentence1() {
   color: var(--text-color);
   border-radius: 18px;
   background: var(--card--bg);
-  box-shadow: var(--card--border) 0px 0px 0px 2px;
+  box-shadow: var(--card-border) 0px 0px 0px 2px;
   transition: box-shadow 0.2s ease-out 0s;
 }
 
 .detail-arrow:hover {
   cursor: pointer;
-  box-shadow: var(--card--border) 0px 0px 0px 5px;
+  box-shadow: var(--card-border) 0px 0px 0px 5px;
 }
 
 .intro-text {
@@ -160,7 +161,7 @@ async function typeSentence1() {
   color: var(--text-color);
 }
 .switch-btn {
-  box-shadow: var(--card--border) 0px 0px 0px 2px;
+  box-shadow: var(--card-border) 0px 0px 0px 2px;
   position: absolute;
   height: 36px;
   padding: 0px 12px;
@@ -179,7 +180,7 @@ async function typeSentence1() {
 }
 .switch-btn:hover {
   cursor: pointer;
-  box-shadow: var(--card--border) 0px 0px 0px 5px;
+  box-shadow: var(--card-border) 0px 0px 0px 5px;
 }
 .switch-btn .icon {
   color: var(--text-color);

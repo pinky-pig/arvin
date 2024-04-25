@@ -1,4 +1,5 @@
 <script lang="ts">
+import { bentoCommonComponentsCfg, bentoCustomComponentsCfg } from '~/config/param'
 /**
  * 获取所有 Bento 通用首页组件的配置。
  * @returns 配置
@@ -18,18 +19,10 @@ async function getCommonComponents() {
 
   const commonsMap = new Map(commons.map(item => [item[0], item[1]]))
 
-  const commonConfig = [
-    { id: 'Profile', x: 0, y: 0, width: 2, height: 2, index: 0, component: commonsMap.get('Profile') },
-    { id: 'Weekly', x: 2, y: 0, width: 2, height: 1, index: 0, component: commonsMap.get('Weekly') },
-    { id: 'Mapbox', x: 0, y: 1, width: 2, height: 1, index: 0, component: commonsMap.get('Mapbox') },
-    { id: 'Dark', x: 3, y: 1, width: 1, height: 1, index: 0, component: commonsMap.get('Dark') },
-    { id: 'CountDown', x: 3, y: 1, width: 2, height: 1, index: 0, component: commonsMap.get('CountDown') },
-    { id: 'Twitter', x: 4, y: 1, width: 1, height: 1, index: 0, component: commonsMap.get('Twitter') },
-    { id: 'PlaneView', x: 0, y: 2, width: 1, height: 2, index: 0, component: commonsMap.get('PlaneView') },
-    { id: 'DragMotion', x: 3, y: 2, width: 1, height: 1, index: 0, component: commonsMap.get('DragMotion') },
-    { id: 'Notion', x: 3, y: 2, width: 1, height: 1, index: 0, component: commonsMap.get('Notion') },
-    { id: 'PageTransition', x: 4, y: 2, width: 1, height: 1, index: 0, component: commonsMap.get('PageTransition') },
-  ]
+  const commonConfig = bentoCommonComponentsCfg.map(item => ({
+    ...item,
+    component: commonsMap.has(item.id) ? commonsMap.get(item.id) : commonsMap.get('NoneCommonCell'),
+  }))
 
   return commonConfig
 }
@@ -53,19 +46,17 @@ async function getCustomComponents() {
 
   const customMap = new Map(custom.map(item => [item[0], item[1]]))
 
-  const customConfig = [
-    { id: 'StrokeText', x: 2, y: 2, width: 1, height: 1, index: 0, component: customMap.get('StrokeText') },
-    // { id: 'SwitchImage', x: 2, y: 3, width: 2, height: 1, index: 0, component: customMap.get('SwitchImage') },
-    { id: 'Sticker8', x: 3, y: 3, width: 1, height: 1, index: 0, component: customMap.get('Sticker8') },
-    { id: 'Cover', x: 0, y: 2, width: 1, height: 2, index: 0, component: customMap.get('Cover') },
-  ]
+  const customConfig = bentoCustomComponentsCfg.map(item => ({
+    ...item,
+    component: customMap.has(item.id) ? customMap.get(item.id) : customMap.get('NoneCustomCell'),
+  }))
 
   return customConfig
 }
 </script>
 
 <script setup lang="ts">
-// eslint-disable-next-line import/first
+// eslint-disable-next-line import/first, import/order
 import { Bento } from 'v3-bento'
 
 const commonComponents = await getCommonComponents()

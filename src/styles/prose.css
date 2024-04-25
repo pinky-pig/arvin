@@ -103,7 +103,7 @@
   line-height: 1.1111111;
 }
 .prose h2 {
-  color: var(--fg-deep);
+  color: var(--fg-deeper);
   font-weight: 700;
   font-size: 1.5em;
   margin-top: 1.5em;
@@ -111,7 +111,7 @@
   line-height: 1.3333333;
 }
 .prose h3 {
-  color: inherit;
+  color: var(--fg-deeper);
   font-weight: 600;
   font-size: 1.25em;
   margin-top: 1.6em;

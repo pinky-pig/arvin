@@ -7,7 +7,7 @@
 <style scoped>
 .card-container {
   background-color: var(--card--bg);
-  border-color: var(--card--border);
+  border-color: var(--card-border);
   border-width: 5px;
   border-style: solid;
   margin-bottom: 8px;
