@@ -2,6 +2,7 @@
 import mapboxgl from 'mapbox-gl'
 import { onMounted, ref } from 'vue'
 import { MapboxSetting } from '~/config'
+import { SITE } from '~/config/param'
 
 const props = withDefaults(
   defineProps<{
@@ -27,7 +28,7 @@ function initMars3d(option: any) {
   map = new mapboxgl.Map({
     container: mapContainer.value!,
     style: MapboxSetting.mapDarkStyle,
-    center: [118.888175, 32.048268],
+    center: SITE.coordinate,
     zoom: 4,
     accessToken: MapboxSetting.token,
     ...option,
