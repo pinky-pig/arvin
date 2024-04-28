@@ -116,5 +116,11 @@
     "vitest": "^1.5.0",
     "vue-router-better-scroller": "^0.0.0",
     "vue-tsc": "^2.0.13"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
   }
 }
