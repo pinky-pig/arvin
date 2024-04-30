@@ -1,3 +1,5 @@
+import { giscusSetting } from '~/config/param'
+
 interface ISetConfigMessage {
   setConfig: {
     theme?: any
@@ -26,19 +28,19 @@ export function registerGiscus(root: HTMLElement) {
   else {
     const script = document.createElement('script')
     script.src = 'https://giscus.app/client.js'
-    script.setAttribute('data-repo', 'pinky-pig/Arvin')
-    script.setAttribute('data-repo-id', 'R_kgDOLC_KIQ')
-    script.setAttribute('data-category', 'General')
-    script.setAttribute('data-category-id', 'DIC_kwDOLC_KIc4CexE9')
-    script.setAttribute('data-mapping', 'og:title')
-    script.setAttribute('data-strict', '0')
-    script.setAttribute('data-reactions-enabled', '1')
-    script.setAttribute('data-emit-metadata', '0')
-    script.setAttribute('data-input-position', 'bottom')
+    script.setAttribute('data-repo', giscusSetting['data-repo'])
+    script.setAttribute('data-repo-id', giscusSetting['data-repo-id'])
+    script.setAttribute('data-category', giscusSetting['data-category'])
+    script.setAttribute('data-category-id', giscusSetting['data-category-id'])
+    script.setAttribute('data-mapping', giscusSetting['data-mapping'])
+    script.setAttribute('data-strict', giscusSetting['data-strict'])
+    script.setAttribute('data-reactions-enabled', giscusSetting['data-reactions-enabled'])
+    script.setAttribute('data-emit-metadata', giscusSetting['data-emit-metadata'])
+    script.setAttribute('data-input-position', giscusSetting['data-input-position'])
     script.setAttribute('data-theme', getCommentTheme(isDark.value ? 'dark' : 'light'))
-    script.setAttribute('data-lang', 'zh-CN')
+    script.setAttribute('data-lang', giscusSetting['data-lang'])
     // script.setAttribute('data-loading', 'lazy')
-    script.setAttribute('crossorigin', 'anonymous')
+    script.setAttribute('crossorigin', giscusSetting.crossorigin)
     script.setAttribute('async', '')
     root.appendChild(script)
     updateGiscusTheme()

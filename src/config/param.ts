@@ -140,6 +140,21 @@ export const PROJECTS = [
   },
 ]
 
+export const giscusSetting = {
+  'data-repo': 'pinky-pig/Arvin',
+  'data-repo-id': 'R_kgDOLC_KIQ',
+  'data-category': 'General',
+  'data-category-id': 'DIC_kwDOLC_KIc4CexE9',
+  'data-mapping': 'og:title',
+  'data-strict': '0',
+  'data-reactions-enabled': '1',
+  'data-emit-metadata': '0',
+  'data-input-position': 'bottom',
+  'data-lang': 'zh-CN',
+  'data-loading': '',
+  'crossorigin': 'anonymous',
+}
+
 export enum MapboxSetting {
   token = 'pk.eyJ1IjoicGlua3ktcGlnIiwiYSI6ImNsZnJvZ2Q1cDAwZ3ozcG56bXFwbjAzZjAifQ.eEOFvRbKqZHQ3OxeqPBsXw',
   mapLightStyle = 'mapbox://styles/pinky-pig/clgc32u1e004g01n2bitvj86a',
