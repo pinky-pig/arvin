@@ -82,7 +82,7 @@ export const PROJECTS = [
     repoUrl: 'https://github.com/pinky-pig/encode-svg',
   },
   {
-    name: 'Html2particel',
+    name: 'Html2particle',
     desc: 'DOM 元素转 Canvas 粒子',
     cover: 'https://cdn.jsdelivr.net/gh/pinky-pig/pic-bed/images20240222140019.png',
     demoUrl: 'https://html2particle.mmeme.me/guide/demo.html',
