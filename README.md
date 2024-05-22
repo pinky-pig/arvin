@@ -31,3 +31,7 @@
 - 📑 Blog
 
 - 📦 Project
+
+# Other
+
+可以免费使用哦，不过希望可以网站添加一行: **设计来自于 [Arvin](https://github.com/pinky-pig/arvin/)** ，麻烦了😁
